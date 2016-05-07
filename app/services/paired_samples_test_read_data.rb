@@ -1,6 +1,5 @@
 class PairedSamplesTestReadData < BaseService
-  # reload!; input_file = "/home/viphat/Downloads/octo/paired_samples_test_input.xlsx"; data_file = "/home/viphat/Downloads/octo/T-Test.xlsx"; object = PairedSamplesTestReadInput.read_file(input_file)
-  # PairedSamplesTestReadData.read_file_with_benchmark(object, data_file)
+  # reload!; input_file = "/home/viphat/Downloads/octo/paired_samples_test_input.xlsx"; data_file = "/home/viphat/Downloads/octo/T-Test.xlsx"; object = PairedSamplesTestReadInput.read_file(input_file); object = PairedSamplesTestReadData.read_file_with_benchmark(object, data_file); output_file = "/home/viphat/Downloads/octo/output.xlsx"
 
   def self.read_file_with_benchmark(object, data_file)
     xlsx = Roo::Spreadsheet.open(data_file)
@@ -20,7 +19,6 @@ class PairedSamplesTestReadData < BaseService
       st_flag, tt_flag = false, false
       sheet.each_with_index do |row, index|
         next if (row.reject { |x| x.nil? }).empty?
-        p row
 
         if row[0].to_s.downcase.start_with?("brand =")
           product_name = row[0].split("=").second.split(" ").join(" ")
@@ -38,14 +36,14 @@ class PairedSamplesTestReadData < BaseService
           count = 0
           object.benchmarks.keys.each do |key|
             if row[1].to_s.include?(key)
-              object.benchmarks[key][name][:mean] = row[2].to_f unless object.benchmarks[key][name][:mean].present?
+              object.benchmarks[key][name][:mean] = (row[2].to_f > 1.0 ? row[2].to_f : row[2].to_f * 100) unless object.benchmarks[key][name][:mean].present?
             else
               count += 1
             end
           end
 
           if count == object.benchmarks.keys.length
-            object.products[product_name][name][:mean] = row[2].to_f unless object.products[product_name][name][:mean].present?
+            object.products[product_name][name][:mean] = (row[2].to_f > 1.0 ? row[2].to_f : row[2].to_f * 100) unless object.products[product_name][name][:mean].present?
           end
         end
 
