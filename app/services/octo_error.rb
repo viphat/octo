@@ -1,0 +1,2 @@
+class OctoError < StandardError
+end
