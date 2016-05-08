@@ -26,7 +26,7 @@ class PairedSamplesTestReadData < BaseService
           next
         end
 
-        if row[0].to_s.downcase == object.statistic_table
+        if row[0].to_s.downcase.include?(object.statistic_table)
           st_flag = true
           next
         end
@@ -36,21 +36,34 @@ class PairedSamplesTestReadData < BaseService
           count = 0
           object.benchmarks.keys.each do |key|
             if row[1].to_s.include?(key)
-              object.benchmarks[key][name][:mean] = (row[2].to_f > 1.0 ? row[2].to_f : row[2].to_f * 100) unless object.benchmarks[key][name][:mean].present?
+              object.benchmarks[key][name][:mean] = (row[2].to_f > 1.0 ? row[2].to_f : row[2].to_f * 100) if object.benchmarks[key][name][:mean].nil?
             else
               count += 1
             end
           end
 
           if count == object.benchmarks.keys.length
-            object.products[product_name][name][:mean] = (row[2].to_f > 1.0 ? row[2].to_f : row[2].to_f * 100) unless object.products[product_name][name][:mean].present?
+            object.products[product_name][name][:mean] = (row[2].to_f > 1.0 ? row[2].to_f : row[2].to_f * 100) if object.products[product_name][name][:mean].nil?
           end
         end
 
-        if row[0].to_s.downcase == object.test_table
+        if row[0].to_s.downcase.include?(object.test_table)
           st_flag = false
           tt_flag = true
           next
+        end
+
+        if tt_flag == true && st_flag == false
+          object.products[product_name][name][:compare_with] = {} if object.products[product_name][name][:compare_with].nil?
+          object.benchmarks.keys.each do |key|
+            object.products[product_name][name][:compare_with][key] = {
+              score: 0,
+              test_80: nil,
+              test_90: nil,
+              test_95: nil,
+              test_99: nil
+            } if object.products[product_name][name][:compare_with][key].nil?
+          end
         end
 
         if tt_flag == true && st_flag == false && row[0].to_s.downcase.start_with?("pair ")
@@ -59,7 +72,6 @@ class PairedSamplesTestReadData < BaseService
             compare_with = key if row[1].to_s.include?(key)
           end
           next if compare_with.nil?
-          object.products[product_name][name][:compare_with] = {} if object.products[product_name][name][:compare_with].nil?
           compare_with_mean = object.benchmarks[compare_with][name][:mean]
           current_product_mean = object.products[product_name][name][:mean]
           object.products[product_name][name][:compare_with][compare_with] = {
@@ -69,6 +81,7 @@ class PairedSamplesTestReadData < BaseService
             test_95: ( row[9].to_f  < 0.05 ? (current_product_mean > compare_with_mean ? "W" : "L") : nil ),
             test_99: ( row[9].to_f  < 0.01 ? (current_product_mean > compare_with_mean ? "W" : "L") : nil )
           }
+
         end
 
       end # End Sheet

@@ -1,5 +1,6 @@
 class PairedSamplesTestExportData
-  # reload!; input_file = "/home/viphat/Downloads/octo/paired_samples_test_input.xlsx"; data_file = "/home/viphat/Downloads/octo/T-Test-Full.xlsx"; object = PairedSamplesTestReadInput.read_file(input_file); object = PairedSamplesTestReadData.read_file_with_benchmark(object, data_file); output_file = "/home/viphat/Downloads/octo/output.xlsx"
+  # reload!; input_file = "/home/viphat/Downloads/octo/paired_samples_test_input.xlsx"; data_file = "/home/viphat/Downloads/octo/T-Test.xlsx"; object = PairedSamplesTestReadInput.read_file(input_file); object = PairedSamplesTestReadData.read_file_with_benchmark(object, data_file); output_file = "/home/viphat/Downloads/octo/output.xlsx"
+  # PairedSamplesTestExportData.write_file(object, output_file)
 
   def self.write_file(object, output_file)
     p = Axlsx::Package.new
@@ -58,6 +59,7 @@ class PairedSamplesTestExportData
       object.benchmarks.keys.each do |y|
         count = 0
         flag = true
+
         if object.test_99 && flag
           if object.products[x][question][:compare_with][y][:test_99] == "W"
             flag = false
@@ -69,6 +71,7 @@ class PairedSamplesTestExportData
             count += 1
           end
         end
+
 
         if object.test_95 && flag
 
