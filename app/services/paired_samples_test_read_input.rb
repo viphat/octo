@@ -1,7 +1,6 @@
 class PairedSamplesTestReadInput < BaseService
 
   def self.read_file(input_file)
-    ### Expected output là một Object PairedSamplesTest
     xlsx = Roo::Spreadsheet.open(input_file)
     sheet = xlsx.sheet("Input")
     raise OctoError, "Không tìm thấy sheet Input" if sheet.nil?
@@ -13,12 +12,10 @@ class PairedSamplesTestReadInput < BaseService
     raise OctoError, "Dòng 10 - Sheet Input không hợp lệ" unless sheet.row(10)[0].to_s.downcase == "0.99"
     benchmarks = (sheet.row(3).reject { |x| x.nil? }).drop(1)
     test_benchmark = benchmarks.length > 0
-
     test_80 = (sheet.row(7)[1].downcase == "x")
     test_90 = (sheet.row(8)[1].downcase == "x")
     test_95 = (sheet.row(9)[1].downcase == "x")
     test_99 = (sheet.row(10)[1].downcase == "x")
-
     if test_benchmark
       higher_80, lower_80 = sheet.row(7)[2], sheet.row(7)[3]
       higher_90, lower_90 = sheet.row(8)[2], sheet.row(8)[3]

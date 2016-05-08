@@ -1,5 +1,4 @@
 class PairedSamplesTestReadData < BaseService
-  # reload!; input_file = "/home/viphat/Downloads/octo/paired_samples_test_input.xlsx"; data_file = "/home/viphat/Downloads/octo/T-Test.xlsx"; object = PairedSamplesTestReadInput.read_file(input_file); object = PairedSamplesTestReadData.read_file_with_benchmark(object, data_file); output_file = "/home/viphat/Downloads/octo/output.xlsx"
 
   def self.read_file_with_benchmark(object, data_file)
     xlsx = Roo::Spreadsheet.open(data_file)
