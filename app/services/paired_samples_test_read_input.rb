@@ -1,5 +1,4 @@
-class PairedSamplesTestReadInput < BaseService
-
+class PairedSamplesTestReadInput
   def self.read_file(input_file)
     xlsx = Roo::Spreadsheet.open(input_file)
     sheet = xlsx.sheet("Input")

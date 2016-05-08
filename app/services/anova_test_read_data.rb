@@ -1,4 +1,4 @@
-class AnovaTestReadData < BaseService
+class AnovaTestReadData
   # reload!; input_file = "/home/viphat/Downloads/octo/anova_test_input.xlsx"; object = AnovaTestReadInput.read_file(input_file); data_file = "/home/viphat/Downloads/octo/anova.xlsx"; object = AnovaTestReadData.read_file(object, data_file)
 
   def self.read_file(object, data_file)
@@ -30,7 +30,7 @@ class AnovaTestReadData < BaseService
 
         if des_flag
           object.products.keys.each do |p|
-            object.products[p][name][:mean] = row[2].to_f if row[0].to_s.split(" ").join(" ") == p && object.products[p][name][:mean].nil?
+            object.products[p][name][:mean] = ( row[2].to_f <= 1.0 ?  row[2].to_f  * 100 : row[2].to_f ) if row[0].to_s.split(" ").join(" ") == p && object.products[p][name][:mean].nil?
           end
         end
 
@@ -92,7 +92,7 @@ class AnovaTestReadData < BaseService
               compare_with_key = key if row[4].to_s.split(" ").join(" ") == key
             end
             if compare_with_key.present?
-              object.products[dunnett_key][name][:compare_with][compare_with_key][:dunnet_sig] = row[7].to_f
+              object.products[dunnett_key][name][:compare_with][compare_with_key][:dunnett_sig] = row[7].to_f
               next
             end
           end

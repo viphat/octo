@@ -1,4 +1,4 @@
-class PairedSamplesTestReadData < BaseService
+class PairedSamplesTestReadData
 
   def self.read_file_with_benchmark(object, data_file)
     xlsx = Roo::Spreadsheet.open(data_file)
