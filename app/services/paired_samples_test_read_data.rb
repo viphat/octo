@@ -3,21 +3,36 @@ class PairedSamplesTestReadData
   def self.read_file_with_benchmark(object, data_file)
     xlsx = Roo::Spreadsheet.open(data_file)
     xlsx.each_with_pagename do |name, sheet|
+      object.questions.push name.to_s unless object.questions.include?(name) || name.downcase.start_with?("sheet")
 
-      object.questions.push name.to_s
-      product_name = nil
+      object.questions.each do |question|
 
-      object.benchmarks.keys.each do |p|
-        object.benchmarks[p][name.to_s] = {}
-      end
+        object.benchmarks.keys.each do |p|
+          object.benchmarks[p][question.to_s] = {}
+        end
 
-      object.products.keys.each do |p|
-        object.products[p][name.to_s] = {}
+        object.products.keys.each do |p|
+          object.products[p][question.to_s] = {}
+        end
+
       end
 
       st_flag, tt_flag = false, false
+      product_name = nil
+
       sheet.each_with_index do |row, index|
+        p index
         next if (row.reject { |x| x.nil? }).empty?
+        name = name || nil
+        if row[0].to_s.downcase == "syntax"
+          object.questions.each do |x|
+            if row[2].to_s.include?("#{x} ")
+              name = x
+              st_flag, tt_flag = false, false
+              product_name = nil
+            end
+          end
+        end
 
         if row[0].to_s.downcase.start_with?("brand =")
           product_name = row[0].split("=").second.split(" ").join(" ")
@@ -82,8 +97,8 @@ class PairedSamplesTestReadData
           }
 
         end
-
       end # End Sheet
+
 
     end # End File
 

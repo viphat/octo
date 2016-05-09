@@ -9,6 +9,7 @@ class PairedSamplesTestReadInput
     raise OctoError, "Dòng 8 - Sheet Input không hợp lệ" unless sheet.row(8)[0].to_s.downcase == "0.9"
     raise OctoError, "Dòng 9 - Sheet Input không hợp lệ" unless sheet.row(9)[0].to_s.downcase == "0.95"
     raise OctoError, "Dòng 10 - Sheet Input không hợp lệ" unless sheet.row(10)[0].to_s.downcase == "0.99"
+    raise OctoError, "Dòng 12 - Sheet Input không hợp lệ" unless sheet.row(12)[0].to_s.downcase == "questions"
     benchmarks = (sheet.row(3).reject { |x| x.nil? }).drop(1)
     test_benchmark = benchmarks.length > 0
     test_80 = (sheet.row(7)[1].downcase == "x")
@@ -34,6 +35,8 @@ class PairedSamplesTestReadInput
     products.each do |p|
       object.products[p] = {}
     end
+
+    object.questions = (sheet.row(12).reject { |x| x.nil? }).drop(1)
 
     object
   end
