@@ -4,11 +4,8 @@ class AnovaTestReadData
   def self.read_file(object, data_file)
     xlsx = Roo::Spreadsheet.open(data_file)
     xlsx.each_with_pagename do |name, sheet|
-      object.questions[name] = {}
 
-      object.products.keys.each do |p|
-        object.products[p][name] = {}
-      end
+      name = nil
 
       des_flag = false
       homo_flag = false
@@ -20,8 +17,27 @@ class AnovaTestReadData
       dunnett_key = nil
 
       sheet.each_with_index do |row, index|
-
+        p index
         next if (row.reject { |x| x.nil? }).empty?
+        name = name || nil
+        if row[0].to_s.start_with?("ONEWAY")
+          object.questions.keys.each do |question|
+            if row[0].to_s.include?("#{question} ")
+              name = question
+              object.products.keys.each do |p|
+                object.products[p][name] = {}
+              end
+              des_flag = false
+              homo_flag = false
+              anova_flag = false
+              posthoc_flag = false
+              tukey_flag = false
+              dunnett_flag = false
+              tukey_key = nil
+              dunnett_key = nil
+            end
+          end
+        end
         # Đọc Mean của các Products
         if row[0].present? && row[0].class == String && row[0].include?(object.descriptives)
           des_flag = true

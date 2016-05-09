@@ -3,6 +3,7 @@ class PairedSamplesTestReadData
   def self.read_file_with_benchmark(object, data_file)
     xlsx = Roo::Spreadsheet.open(data_file)
     xlsx.each_with_pagename do |name, sheet|
+
       object.questions.push name.to_s unless object.questions.include?(name) || name.downcase.start_with?("sheet")
 
       object.questions.each do |question|
