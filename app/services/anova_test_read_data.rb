@@ -53,14 +53,14 @@ class AnovaTestReadData
         if des_flag && row[0].present? && row[0].class == String && row[0].include?(object.homogeneity)
           des_flag = false
           homo_flag = true
-          object.questions[name][:homogeneity_sig] = sheet.row(index+2)[3].to_f
+          object.questions[name][:homogeneity_sig] = sheet.row(index+4)[3].to_f
           next
         end
 
         if homo_flag && row[0].present? && row[0].class == String && row[0].include?(object.anova)
           homo_flag = false
           anova_flag = true
-          object.questions[name][:anova_sig] = sheet.row(index+2)[5].to_f
+          object.questions[name][:anova_sig] = sheet.row(index+4)[5].to_f
           next
         end
 
