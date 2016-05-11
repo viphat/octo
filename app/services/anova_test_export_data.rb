@@ -35,6 +35,17 @@ class AnovaTestExportData
     row = [question]
     object.products.keys.each do |p|
       row.push object.products[p][question][:mean]
+
+      if object.questions[question][:warnings].present? && object.questions[question][:warnings] == true
+        row.push ""
+        next
+      end
+
+      if object.products[p][question][:compare_with].nil?
+        row.push ""
+        next
+      end
+
       sig = ""
       # Test 95%
       sig_key_95 =
@@ -57,9 +68,11 @@ class AnovaTestExportData
         end
 
       if sig_key_95.nil? && sig_key_90.nil?
-        row.push  ""
+        row.push ""
         next
       end
+
+
 
       object.products[p][question][:compare_with].keys.each do |compare_key|
         alias_key = object.products[compare_key][:alias]
