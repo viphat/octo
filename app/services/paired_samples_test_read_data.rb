@@ -4,7 +4,7 @@ class PairedSamplesTestReadData
     xlsx = Roo::Spreadsheet.open(data_file)
     xlsx.each_with_pagename do |name, sheet|
 
-      object.questions.push name.to_s unless object.questions.include?(name) || name.downcase.start_with?("sheet")
+      object.questions.push name.to_s if object.questions.include?(name) == false && name.downcase.start_with?("sheet") == false
 
       object.questions.each do |question|
 
@@ -50,15 +50,15 @@ class PairedSamplesTestReadData
 
           count = 0
           object.benchmarks.keys.each do |key|
-            if row[1].to_s.include?(key)
-              object.benchmarks[key][name][:mean] = (row[2].to_f > 1.0 ? row[2].to_f : row[2].to_f * 100) if object.benchmarks[key][name][:mean].nil?
+            if row[1].to_s.include?(key) && object.benchmarks[key][name][:mean].nil?
+              object.benchmarks[key][name][:mean] = ( row[2].to_f > 1.0 ? row[2].to_f : (row[2] == "." ? "." : row[2].to_f * 100 ) )
             else
               count += 1
             end
           end
 
-          if count == object.benchmarks.keys.length
-            object.products[product_name][name][:mean] = (row[2].to_f > 1.0 ? row[2].to_f : row[2].to_f * 100) if object.products[product_name][name][:mean].nil?
+          if count == object.benchmarks.keys.length && object.products[product_name][name][:mean].nil?
+            object.products[product_name][name][:mean] = (row[2].to_f > 1.0 ? row[2].to_f : (row[2] == "." ? "." : row[2].to_f * 100) )
           end
         end
 
