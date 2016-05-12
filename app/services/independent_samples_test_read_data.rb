@@ -2,17 +2,17 @@ class IndependentSamplesTestReadData
 
   def self.read_file(object, data_file)
     xlsx = Roo::Spreadsheet.open(data_file)
+    object.questions.each do |question|
+      object.benchmarks.keys.each do |p|
+        object.benchmarks[p][question.to_s] = {}
+      end
+
+      object.products.keys.each do |p|
+        object.products[p][question.to_s] = {}
+      end
+    end
     xlsx.each_with_pagename do |name, sheet|
       object.questions.push name.to_s if object.questions.include?(name) == false && name.downcase.start_with?("sheet") == false
-
-      object.questions.each do |question|
-        object.benchmarks.keys.each do |p|
-          object.benchmarks[p][question.to_s] = {}
-        end
-        object.products.keys.each do |p|
-          object.products[p][question.to_s] = {}
-        end
-      end
 
       group_statistics_flag = false
       independent_flag = false
@@ -46,8 +46,8 @@ class IndependentSamplesTestReadData
 
         if str == object.group_statistics
           group_statistics_flag = true
-          brand_1 = sheet.row(index+3)[1].split(" ").join(" ")
-          brand_2 = sheet.row(index+4)[1].split(" ").join(" ")
+          brand_1 = sheet.row(index+3)[2].split(" ").join(" ")
+          brand_2 = sheet.row(index+4)[2].split(" ").join(" ")
           # Read Mean
           object.benchmarks.keys.each do |bm|
             if bm == brand_1 && object.benchmarks[bm][name][:mean].nil?

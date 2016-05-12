@@ -2,21 +2,19 @@ class PairedSamplesTestReadData
 
   def self.read_file_with_benchmark(object, data_file)
     xlsx = Roo::Spreadsheet.open(data_file)
+
+    object.questions.each do |question|
+      object.benchmarks.keys.each do |p|
+        object.benchmarks[p][question.to_s] = {}
+      end
+      object.products.keys.each do |p|
+        object.products[p][question.to_s] = {}
+      end
+    end
+
     xlsx.each_with_pagename do |name, sheet|
 
       object.questions.push name.to_s if object.questions.include?(name) == false && name.downcase.start_with?("sheet") == false
-
-      object.questions.each do |question|
-
-        object.benchmarks.keys.each do |p|
-          object.benchmarks[p][question.to_s] = {}
-        end
-
-        object.products.keys.each do |p|
-          object.products[p][question.to_s] = {}
-        end
-
-      end
 
       st_flag, tt_flag = false, false
       product_name = nil
