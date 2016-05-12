@@ -51,15 +51,15 @@ class IndependentSamplesTestReadData
           # Read Mean
           object.benchmarks.keys.each do |bm|
             if bm == brand_1 && object.benchmarks[bm][name][:mean].nil?
-              object.benchmarks[bm][name][:mean] = ( sheet.row(index+3)[3].to_f > 1.0 ? sheet.row(index+3)[3].to_f :
-                sheet.row(index+3)[3] == "." ? "." : sheet.row(index+3)[3].to_f * 100 )
+              object.benchmarks[bm][name][:mean] = ( sheet.row(index+3)[4].to_f > 1.0 ? sheet.row(index+3)[4].to_f :
+                sheet.row(index+3)[4] == "." ? "." : sheet.row(index+3)[4].to_f * 100 )
             end
           end
 
           object.products.keys.each do |product|
             if product == brand_2 && object.products[product][name][:mean].nil?
-              object.products[product][name][:mean] = ( sheet.row(index+4)[3].to_f > 1.0 ? sheet.row(index+4)[3].to_f :
-                sheet.row(index+4)[3] == "." ? "." : sheet.row(index+4)[3].to_f * 100 )
+              object.products[product][name][:mean] = ( sheet.row(index+4)[4].to_f > 1.0 ? sheet.row(index+4)[4].to_f :
+                sheet.row(index+4)[4] == "." ? "." : sheet.row(index+4)[4].to_f * 100 )
             end
           end
 
