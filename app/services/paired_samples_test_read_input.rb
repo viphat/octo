@@ -16,14 +16,15 @@ class PairedSamplesTestReadInput
     test_90 = (sheet.row(8)[1].downcase == "x")
     test_95 = (sheet.row(9)[1].downcase == "x")
     test_99 = (sheet.row(10)[1].downcase == "x")
+    higher_80, lower_80 = sheet.row(7)[2], sheet.row(7)[3]
+    higher_90, lower_90 = sheet.row(8)[2], sheet.row(8)[3]
+    higher_95, lower_95 = sheet.row(9)[2], sheet.row(9)[3]
+    higher_99, lower_99 = sheet.row(10)[2], sheet.row(10)[3]
+
     if test_benchmark
-      higher_80, lower_80 = sheet.row(7)[2], sheet.row(7)[3]
-      higher_90, lower_90 = sheet.row(8)[2], sheet.row(8)[3]
-      higher_95, lower_95 = sheet.row(9)[2], sheet.row(9)[3]
-      higher_99, lower_99 = sheet.row(10)[2], sheet.row(10)[3]
       object = PairedSamplesTest.new(test_benchmark, test_80, test_90, test_95, test_99, higher_80, higher_90, higher_95, higher_99, lower_80, lower_90, lower_95, lower_99)
     else
-      object = PairedSamplesTest.new(false, test_80, test_90, test_95, test_99)
+      object = PairedSamplesTest.new(false, test_80, test_90, test_95, test_99, higher_80, higher_90, higher_95, higher_99, lower_80, lower_90, lower_95, lower_99)
     end
 
     benchmarks.each do |p|

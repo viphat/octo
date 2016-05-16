@@ -1,5 +1,5 @@
 class PairedSamplesTestExportData
-  # reload!; input_file = "/home/viphat/Downloads/octo/paired_samples_test_input.xlsx"; data_file = "/home/viphat/Downloads/octo/T-Test.xlsx"; object = PairedSamplesTestReadInput.read_file(input_file); object = PairedSamplesTestReadData.read_file_with_benchmark(object, data_file); output_file = "/home/viphat/Downloads/octo/output.xlsx"
+  # reload!; input_file = "/home/viphat/Downloads/octo/paired_samples_test_input.xlsx"; data_file = "/home/viphat/Downloads/octo/BMvsBM.xls"; object = PairedSamplesTestReadInput.read_file(input_file); object = PairedSamplesTestReadData.read_data_without_benchmark(object, data_file); output_file = "/home/viphat/Downloads/octo/output.xlsx"
   # PairedSamplesTestExportData.write_file(object, output_file)
 
   def self.write_file(object, output_file)
@@ -55,7 +55,6 @@ class PairedSamplesTestExportData
 
     object.products.keys.each do |x|
       row.push object.products[x][question][:mean]
-
       object.benchmarks.keys.each do |y|
         count = 0
         flag = true
