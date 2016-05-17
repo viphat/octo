@@ -45,10 +45,11 @@ class PairedSamplesTestReadData
             product_name = key if sheet.row(index+2)[1].include?(key)
           end
 
-          object.products[bm_name][name][:mean] = row[2].to_f
+          object.products[bm_name][name][:mean] ||= (row[2].to_f > 1.0 ? row[2].to_f : (row[2] == "." ? "." : row[2].to_f * 100) )
           object.products[bm_name][name][:compare_with] ||= {}
           object.products[bm_name][name][:compare_with][product_name] ||= {}
-          object.products[bm_name][name][:compare_with][product_name][:mean] = sheet.row(index+2)[2].to_f
+          object.products[bm_name][name][:compare_with][product_name][:mean] ||= (sheet.row(index+2)[2].to_f > 1.0 ? sheet.row(index+2)[2].to_f : (sheet.row(index+2)[2] == "." ? "." : sheet.row(index+2)[2].to_f * 100) )
+
         end
 
         if row[0].to_s.downcase.include?(object.correlation)
