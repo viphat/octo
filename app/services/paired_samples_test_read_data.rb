@@ -101,7 +101,7 @@ class PairedSamplesTestReadData
 
     xlsx.each_with_pagename do |name, sheet|
 
-      object.questions.push name.to_s if object.questions.include?(name) == false && name.downcase.start_with?("sheet") == false
+      # object.questions.push name.to_s if object.questions.include?(name) == false && name.downcase.start_with?("sheet") == false
 
       st_flag, tt_flag = false, false
       product_name = nil
@@ -110,6 +110,7 @@ class PairedSamplesTestReadData
         p index
         next if (row.reject { |x| x.nil? }).empty?
         name = name || nil
+
         if row[0].to_s.downcase == "syntax"
           object.questions.each do |x|
             if row[2].to_s.include?("#{x} ")
@@ -135,8 +136,8 @@ class PairedSamplesTestReadData
 
           count = 0
           object.benchmarks.keys.each do |key|
-            if row[1].to_s.include?(key) && object.benchmarks[key][name][:mean].nil?
-              object.benchmarks[key][name][:mean] = ( row[2].to_f > 1.0 ? row[2].to_f : (row[2] == "." ? "." : row[2].to_f * 100 ) )
+            if row[1].to_s.include?(key)
+              object.benchmarks[key][name][:mean] = ( row[2].to_f > 1.0 ? row[2].to_f : (row[2] == "." ? "." : row[2].to_f * 100 ) ) if object.benchmarks[key][name][:mean].nil?
             else
               count += 1
             end
@@ -145,6 +146,7 @@ class PairedSamplesTestReadData
           if count == object.benchmarks.keys.length && object.products[product_name][name][:mean].nil?
             object.products[product_name][name][:mean] = (row[2].to_f > 1.0 ? row[2].to_f : (row[2] == "." ? "." : row[2].to_f * 100) )
           end
+
         end
 
         if row[0].to_s.downcase.include?(object.test_table)

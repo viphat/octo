@@ -1,5 +1,6 @@
 class PairedSamplesTestExportData
-  # reload!; input_file = "/home/viphat/Downloads/octo/paired_samples_test_input.xlsx"; data_file = "/home/viphat/Downloads/octo/BMvsBM.xls"; object = PairedSamplesTestReadInput.read_file(input_file); object = PairedSamplesTestReadData.read_data_without_benchmark(object, data_file); output_file = "/home/viphat/Downloads/octo/output.xlsx"
+  # reload!; input_file = "/home/viphat/Downloads/octo/paired_samples_test_input.xlsx"; data_file = "/home/viphat/Downloads/octo/BMvsCandi total/Utilitarian.xls"; object = PairedSamplesTestReadInput.read_file(input_file); object = PairedSamplesTestReadData.read_data_with_benchmark(object, data_file); output_file = "/home/viphat/Downloads/octo/BMvsCandi total/Utilitarian output.xls"; PairedSamplesTestExportData.write_file(object, output_file)
+
   # PairedSamplesTestExportData.write_file_without_benchmark(object, output_file)
 
   def self.write_file_without_benchmark(object, output_file)
@@ -18,6 +19,7 @@ class PairedSamplesTestExportData
     num_of_tests += 1 if object.test_80
 
     object.questions.each do |question|
+      p question
       PairedSamplesTestExportData.write_question_data_without_benchmark(object, question, output_sheet, num_of_tests)
     end
 
