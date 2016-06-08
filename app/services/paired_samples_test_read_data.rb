@@ -101,7 +101,7 @@ class PairedSamplesTestReadData
 
     xlsx.each_with_pagename do |name, sheet|
 
-      # object.questions.push name.to_s if object.questions.include?(name) == false && name.downcase.start_with?("sheet") == false
+      object.questions.push name.to_s if object.questions.include?(name) == false && name.downcase.start_with?("sheet") == false
 
       st_flag, tt_flag = false, false
       product_name = nil

@@ -25,6 +25,7 @@ class IndependentSamplesTestReadData
         next if (row.reject { |x| x.nil? }).empty?
         name = name || nil
         str = row[0].to_s.downcase
+        str = row[1].to_s.downcase if str.blank?
 
         if str.start_with?("  /variables=")
           object.questions.each do |x|
@@ -46,20 +47,23 @@ class IndependentSamplesTestReadData
 
         if str == object.group_statistics
           group_statistics_flag = true
-          brand_1 = sheet.row(index+3)[2].split(" ").join(" ")
-          brand_2 = sheet.row(index+4)[2].split(" ").join(" ")
+          i = 2
+          i = 1 unless sheet.row(index+3)[i].is_a?(String)
+          brand_1 = sheet.row(index+3)[i].split(" ").join(" ")
+          brand_2 = sheet.row(index+4)[i].split(" ").join(" ")
           # Read Mean
           object.benchmarks.keys.each do |bm|
             if bm == brand_1 && object.benchmarks[bm][name][:mean].nil?
-              object.benchmarks[bm][name][:mean] = ( sheet.row(index+3)[4].to_f > 1.0 ? sheet.row(index+3)[4].to_f :
-                sheet.row(index+3)[4] == "." ? "." : sheet.row(index+3)[4].to_f * 100 )
+              object.benchmarks[bm][name][:mean] = ( sheet.row(index+3)[i+2].to_f > 1.0 ? sheet.row(index+3)[i+2].to_f :
+                sheet.row(index+3)[4] == "." ? "." : sheet.row(index+3)[i+2].to_f * 100 )
             end
           end
 
           object.products.keys.each do |product|
+
             if product == brand_2 && object.products[product][name][:mean].nil?
-              object.products[product][name][:mean] = ( sheet.row(index+4)[4].to_f > 1.0 ? sheet.row(index+4)[4].to_f :
-                sheet.row(index+4)[4] == "." ? "." : sheet.row(index+4)[4].to_f * 100 )
+              object.products[product][name][:mean] = ( sheet.row(index+4)[i+2].to_f > 1.0 ? sheet.row(index+4)[i+2].to_f :
+                sheet.row(index+4)[i+2] == "." ? "." : sheet.row(index+4)[i+2].to_f * 100 )
             end
           end
 
@@ -116,7 +120,6 @@ class IndependentSamplesTestReadData
             elsif sig_2_tailed_ass < 0.01
               is_significant_99 = true
             end
-
             object.products[brand_2][name][:compare_with] = object.products[brand_2][name][:compare_with] || {}
             brand_1_mean = object.benchmarks[brand_1][name][:mean]
             brand_2_mean = object.products[brand_2][name][:mean]
