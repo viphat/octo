@@ -1,5 +1,5 @@
 class AnovaTestExportData
-  # reload!; input_file = "/home/viphat/Downloads/octo/anova_test_input.xlsx"; object = AnovaTestReadInput.read_file(input_file); data_file = "/home/viphat/Downloads/octo/SLORD/ANOVA.xls"; object = AnovaTestReadData.read_file(object, data_file); output_file = "/home/viphat/Downloads/octo/SLORD/SLORD-ANOVA-OUTPUT.xls"; AnovaTestExportData.write_file(object, output_file)
+  # reload!; input_file = "/home/viphat/Downloads/octo/anova_test_input.xlsx"; object = AnovaTestReadInput.read_file(input_file); data_file = "/home/viphat/Downloads/octo/ANOVA 1306/ANOVA-PowLiq.xls"; object = AnovaTestReadData.read_file(object, data_file); output_file = "/home/viphat/Downloads/octo/ANOVA 1306/ANOVA-PowLiq OUTPUT.xls"; AnovaTestExportData.write_file(object, output_file)
 
   # AnovaTestExportData.write_file(object, output_file)
 

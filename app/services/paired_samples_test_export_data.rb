@@ -1,5 +1,5 @@
 class PairedSamplesTestExportData
-  # reload!; input_file = "/home/viphat/Downloads/octo/paired_samples_test_input.xlsx"; data_file = "/home/viphat/Downloads/octo/BMvsCandi total/Utilitarian.xls"; object = PairedSamplesTestReadInput.read_file(input_file); object = PairedSamplesTestReadData.read_data_with_benchmark(object, data_file); output_file = "/home/viphat/Downloads/octo/BMvsCandi total/Utilitarian output.xls"; PairedSamplesTestExportData.write_file(object, output_file)
+  # reload!; input_file = "/home/viphat/Downloads/octo/paired_samples_test_input.xlsx"; data_file = "/home/viphat/Downloads/octo/BMvsCandi/BMvsCandi-PowLiq.xls"; object = PairedSamplesTestReadInput.read_file(input_file); object = PairedSamplesTestReadData.read_data_with_benchmark(object, data_file); output_file = "/home/viphat/Downloads/octo/BMvsCandi/BMvsCandi-PowLiq output.xls"; PairedSamplesTestExportData.write_file(object, output_file)
 
   # PairedSamplesTestExportData.write_file_without_benchmark(object, output_file)
 
@@ -162,19 +162,22 @@ class PairedSamplesTestExportData
       object.benchmarks.keys.each do |y|
         count = 0
         flag = true
+        if object.products[x][question][:compare_with].nil?
+          row.push ""
+          next
+        end
 
         if object.test_99 && flag
-          if object.products[x][question][:compare_with][y][:test_99] == "W"
+          if  object.products[x][question][:compare_with][y][:test_99] == "W"
             flag = false
             row.push object.higher_99
-          elsif object.products[x][question][:compare_with][y][:test_99] == "L"
+          elsif object.products[x][question][:compare_with].present? && object.products[x][question][:compare_with][y][:test_99] == "L"
             flag = false
             row.push object.lower_99
           else
             count += 1
           end
         end
-
 
         if object.test_95 && flag
 

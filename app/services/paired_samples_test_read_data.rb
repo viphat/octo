@@ -109,6 +109,7 @@ class PairedSamplesTestReadData
       sheet.each_with_index do |row, index|
         p index
         next if (row.reject { |x| x.nil? }).empty?
+        next if row[0].present? && row[0].start_with?("No statistics are computed for a split file")
         name = name || nil
 
         if row[0].to_s.downcase == "syntax"

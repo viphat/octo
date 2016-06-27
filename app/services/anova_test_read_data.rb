@@ -4,9 +4,7 @@ class AnovaTestReadData
   def self.read_file(object, data_file)
     xlsx = Roo::Spreadsheet.open(data_file)
     xlsx.each_with_pagename do |name, sheet|
-
       name = nil
-
       des_flag = false
       homo_flag = false
       anova_flag = false

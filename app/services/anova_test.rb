@@ -1,7 +1,5 @@
 class AnovaTest
-
   attr_reader :descriptives, :homogeneity, :anova, :posthoc, :tukey_hsd, :dunnett_t3
-
   attr_accessor :products, :questions
 
   def initialize
