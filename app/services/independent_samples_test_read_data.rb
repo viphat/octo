@@ -29,7 +29,7 @@ class IndependentSamplesTestReadData
 
         if str.start_with?("  /variables=")
           object.questions.each do |x|
-            next unless row[0].to_s.split("=").second == x
+            next unless row[0].to_s.split("=").second.upcase == x.upcase
             name = x
             warnings = false
             group_statistics_flag = false
