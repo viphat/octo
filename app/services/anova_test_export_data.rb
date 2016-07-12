@@ -1,5 +1,5 @@
 class AnovaTestExportData
-  # reload!; input_file = "/data/ruby/data-peacocks/anova_test_input.xlsx"; object = AnovaTestReadInput.read_file(input_file); data_file = "/data/ruby/data-peacocks/PEACOCKS - ANOVA.xls"; object = AnovaTestReadData.read_file(object, data_file); output_file = "/data/ruby/data-peacocks/PEACOCKS - ANOVA - OUTPUT.xls"; AnovaTestExportData.write_file(object, output_file)
+  # reload!; input_file = "/data/ruby/new-octo/anova_test_input.xlsx"; object = AnovaTestReadInput.read_file(input_file); data_file = "/data/ruby/new-octo/ANOVA-Method-total copy.xls"; object = AnovaTestReadData.read_file(object, data_file); output_file = "/data/ruby/new-octo/ANOVA-Method-total copy OUTPUT.xls"; AnovaTestExportData.write_file(object, output_file)
 
   def self.write_file(object, output_file)
     p = Axlsx::Package.new

@@ -2,6 +2,7 @@ class IndependentSamplesTestReadData
 
   def self.read_file(object, data_file)
     xlsx = Roo::Spreadsheet.open(data_file)
+
     object.questions.each do |question|
       object.benchmarks.keys.each do |p|
         object.benchmarks[p][question.to_s] = {}
@@ -11,8 +12,9 @@ class IndependentSamplesTestReadData
         object.products[p][question.to_s] = {}
       end
     end
+    sheet_index = 1
     xlsx.each_with_pagename do |name, sheet|
-      object.questions.push name.to_s if object.questions.include?(name) == false && name.downcase.start_with?("sheet") == false
+      # object.questions.push name.to_s if object.questions.include?(name) == false && name.downcase.start_with?("sheet") == false
 
       group_statistics_flag = false
       independent_flag = false
@@ -40,30 +42,27 @@ class IndependentSamplesTestReadData
           next
         end
 
-        if str == "warnings"
-          warnings = true
-          next
-        end
+        warnings = true and next if str == "warnings"
 
         if str == object.group_statistics
           group_statistics_flag = true
           i = 2
-          i = 1 unless sheet.row(index+3)[i].is_a?(String)
-          brand_1 = sheet.row(index+3)[i].split(" ").join(" ")
-          brand_2 = sheet.row(index+4)[i].split(" ").join(" ")
+          i = 1 unless sheet.row(index+4)[i].is_a?(String)
+          brand_1 = "#{sheet.row(index+4)[i].split(" ").join(" ")}_#{sheet_index}"
+          brand_2 = "#{sheet.row(index+3)[i].split(" ").join(" ")}_#{sheet_index}"
           # Read Mean
           object.benchmarks.keys.each do |bm|
             if bm == brand_1 && object.benchmarks[bm][name][:mean].nil?
-              object.benchmarks[bm][name][:mean] = ( sheet.row(index+3)[i+2].to_f > 1.0 ? sheet.row(index+3)[i+2].to_f :
-                sheet.row(index+3)[4] == "." ? "." : sheet.row(index+3)[i+2].to_f * 100 )
+              object.benchmarks[bm][name][:mean] = ( sheet.row(index+4)[i+2].to_f > 1.0 ? sheet.row(index+4)[i+2].to_f :
+                sheet.row(index+4)[4] == "." ? "." : sheet.row(index+4)[i+2].to_f * 100 )
             end
           end
 
           object.products.keys.each do |product|
 
             if product == brand_2 && object.products[product][name][:mean].nil?
-              object.products[product][name][:mean] = ( sheet.row(index+4)[i+2].to_f > 1.0 ? sheet.row(index+4)[i+2].to_f :
-                sheet.row(index+4)[i+2] == "." ? "." : sheet.row(index+4)[i+2].to_f * 100 )
+              object.products[product][name][:mean] = ( sheet.row(index+3)[i+2].to_f > 1.0 ? sheet.row(index+3)[i+2].to_f :
+                sheet.row(index+3)[i+2] == "." ? "." : sheet.row(index+3)[i+2].to_f * 100 )
             end
           end
 
@@ -133,7 +132,7 @@ class IndependentSamplesTestReadData
         end
 
       end # Rows in Sheet
-
+      sheet_index += 1
     end # Sheets
 
     object

@@ -1,5 +1,5 @@
 class IndependentSamplesTestExportData
-  # reload!; input_file = "/data/ruby/data-peacocks/independent_samples_test_input.xlsx"; data_file = "/data/ruby/data-peacocks/PEACOCKS - TTEST.xls"; object = IndependentSamplesTestReadInput.read_file(input_file); object = IndependentSamplesTestReadData.read_file(object, data_file); output_file = "/data/ruby/data-peacocks/PEACOCKS - TTEST - OUTPUT.xls"; IndependentSamplesTestExportData.write_file(object, output_file)
+  # reload!; input_file = "/data/ruby/new-octo/independent_samples_test_input.xlsx"; data_file = "/data/ruby/new-octo/TTEST-Wet/TTEST-WET-Young.xls"; object = IndependentSamplesTestReadInput.read_file(input_file); object = IndependentSamplesTestReadData.read_file(object, data_file); output_file = "/data/ruby/new-octo/TTEST-WET-Young OUTPUT.xls"; IndependentSamplesTestExportData.write_file(object, output_file)
 
   def self.write_file(object, output_file)
     p = Axlsx::Package.new
