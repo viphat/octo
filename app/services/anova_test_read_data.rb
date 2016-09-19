@@ -20,7 +20,7 @@ class AnovaTestReadData
         name = name || nil
         if row[0].to_s.start_with?("ONEWAY")
           object.questions.keys.each do |question|
-            if row[0].to_s.upcase().include?("#{question.upcase()} ")
+            if row[0].to_s.upcase().include?("#{question.to_s.upcase().split(" ").join(" ").to_s} ")
               name = question
               object.products.keys.each do |p|
                 object.products[p][name] = {}

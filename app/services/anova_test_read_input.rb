@@ -8,9 +8,9 @@ class AnovaTestReadInput
     raise OctoError, "Dòng 3 - Sheet Input không hợp lệ" unless sheet.row(3)[0].to_s.downcase == "products"
     raise OctoError, "Dòng 4 - Sheet Input không hợp lệ" unless sheet.row(4)[0].to_s.downcase == "aliases"
     raise OctoError, "Dòng 6 - Sheet Input không hợp lệ" unless sheet.row(6)[0].to_s.downcase == "questions"
-    products = (sheet.row(3).reject { |x| x.nil? }).drop(1)
-    aliases = (sheet.row(4).reject { |x| x.nil? }).drop(1)
-    questions = (sheet.row(6).reject { |x| x.nil? }).drop(1)
+    products = (sheet.row(3).reject { |x| x.nil? }).drop(1).map(&:to_s)
+    aliases = (sheet.row(4).reject { |x| x.nil? }).drop(1).map(&:to_s)
+    questions = (sheet.row(6).reject { |x| x.nil? }).drop(1).map(&:to_s)
     raise OctoError, "Số lượng Products và Aliases không khớp" if products.length != aliases.length
     object = AnovaTest.new()
 
