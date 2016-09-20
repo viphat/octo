@@ -78,20 +78,21 @@ class AnovaTestReadData
           tukey_flag = false
           dunnett_flag = true
         end
-
+        # IMPORTANT
+        col = 1
         if tukey_flag
           object.products.keys.each do |key|
-            tukey_key = key if row[2].to_s.split(" ").join(" ") == key
+            tukey_key = key if row[col].to_s.split(" ").join(" ") == key
           end
           if tukey_key
             compare_with_key = nil
             object.products.keys.each do |key|
-              compare_with_key = key if row[4].to_s.split(" ").join(" ") == key
+              compare_with_key = key if row[col+2].to_s.split(" ").join(" ") == key
             end
             if compare_with_key.present?
               object.products[tukey_key][name][:compare_with] = object.products[tukey_key][name][:compare_with] || {}
               object.products[tukey_key][name][:compare_with][compare_with_key] = object.products[tukey_key][name][:compare_with][compare_with_key] || {}
-              object.products[tukey_key][name][:compare_with][compare_with_key][:tukey_sig] = row[7].to_f
+              object.products[tukey_key][name][:compare_with][compare_with_key][:tukey_sig] = row[col+5].to_f
               next
             end
           end
@@ -99,15 +100,15 @@ class AnovaTestReadData
 
         if dunnett_flag
           object.products.keys.each do |key|
-            dunnett_key = key if row[2].to_s.split(" ").join(" ") == key
+            dunnett_key = key if row[col].to_s.split(" ").join(" ") == key
           end
           if dunnett_key
             compare_with_key = nil
             object.products.keys.each do |key|
-              compare_with_key = key if row[4].to_s.split(" ").join(" ") == key
+              compare_with_key = key if row[col+2].to_s.split(" ").join(" ") == key
             end
             if compare_with_key.present?
-              object.products[dunnett_key][name][:compare_with][compare_with_key][:dunnett_sig] = row[7].to_f
+              object.products[dunnett_key][name][:compare_with][compare_with_key][:dunnett_sig] = row[col+5].to_f
               next
             end
           end
