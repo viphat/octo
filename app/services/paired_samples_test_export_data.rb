@@ -1,5 +1,5 @@
 class PairedSamplesTestExportData
-  # reload!; input_file = "/home/viphat/Downloads/octo/paired_samples_test_input.xlsx"; data_file = "/home/viphat/Downloads/octo/BMvsCandi/BMvsCandi-PowLiq.xls"; object = PairedSamplesTestReadInput.read_file(input_file); object = PairedSamplesTestReadData.read_data_with_benchmark(object, data_file); output_file = "/home/viphat/Downloads/octo/BMvsCandi/BMvsCandi-PowLiq output.xls"; PairedSamplesTestExportData.write_file(object, output_file)
+  # reload!; input_file = "/Users/viphat/projects/ruby/white-rose/paired_sample_test_input.xlsx"; data_file = "/Users/viphat/projects/ruby/white-rose/TTEST_Cool.xls"; object = PairedSamplesTestReadInput.read_file(input_file); object = PairedSamplesTestReadData.read_data_with_benchmark(object, data_file); output_file = "/Users/viphat/projects/ruby/white-rose/TTEST_Cool OUTPUT.xls"; PairedSamplesTestExportData.write_file(object, output_file)
 
   # PairedSamplesTestExportData.write_file_without_benchmark(object, output_file)
 

@@ -1,5 +1,5 @@
 class AnovaTestExportData
-  # reload!; input_file = "/Users/viphat/projects/ruby/new-octo/anova_test_input.xlsx"; object = AnovaTestReadInput.read_file(input_file); data_file = "/Users/viphat/projects/ruby/new-octo/ANOVA-full.xls"; object = AnovaTestReadData.read_file(object, data_file); output_file = "/Users/viphat/projects/ruby/new-octo/ANOVA-full-OUTPUT.xls"; AnovaTestExportData.write_file(object, output_file)
+  # reload!; input_file = "/Users/viphat/projects/ruby/white-rose/anova_test_input.xlsx"; object = AnovaTestReadInput.read_file(input_file); data_file = "/Users/viphat/projects/ruby/white-rose/ANOVA-Cool.xls"; object = AnovaTestReadData.read_file(object, data_file); output_file = "/Users/viphat/projects/ruby/white-rose/ANOVA-Cool Output.xls"; AnovaTestExportData.write_file(object, output_file)
 
   def self.write_file(object, output_file)
     p = Axlsx::Package.new
@@ -33,11 +33,11 @@ class AnovaTestExportData
     row = [question]
     object.products.keys.each do |p|
       puts question
-      if (question.upcase.include?("MEAN"))
-        row.push object.products[p][question][:mean]
-      else
-        row.push object.products[p][question][:mean] / 100.0
-      end
+      # if (question.upcase.include?("MEAN"))
+      row.push object.products[p][question][:mean]
+      # else
+      #   row.push object.products[p][question][:mean] / 100.0
+      # end
 
       if object.questions[question][:warnings].present? && object.questions[question][:warnings] == true
         row.push ""
