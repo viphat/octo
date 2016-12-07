@@ -114,7 +114,7 @@ class PairedSamplesTestReadData
 
         if row[0].to_s.downcase == "syntax"
           object.questions.each do |x|
-            if row[2].to_s.include?("#{x}_#{object.products.try(:first).try(:first)} ")
+            if row[2].to_s.include?("#{x} ")
               name = x
               st_flag, tt_flag = false, false
               product_name = nil
@@ -122,11 +122,11 @@ class PairedSamplesTestReadData
           end
         end
 
-        # if row[0].to_s.downcase.start_with?("brand =")
-        #   product_name = row[0].split("=").second.split(" ").join(" ")
-        #   st_flag, tt_flag = false, false
-        #   next
-        # end
+        if row[0].to_s.downcase.start_with?("brand =")
+          product_name = row[0].split("=").second.split(" ").join(" ")
+          st_flag, tt_flag = false, false
+          next
+        end
 
         if row[0].to_s.downcase.include?(object.statistic_table)
           st_flag = true
@@ -139,15 +139,8 @@ class PairedSamplesTestReadData
           object.benchmarks.keys.each do |key|
             if row[1].to_s.include?(key)
               object.benchmarks[key][name][:mean] = ( row[2].to_f > 1.0 ? row[2].to_f : (row[2] == "." ? "." : row[2].to_f * 100 ) ) if object.benchmarks[key][name][:mean].nil?
-              next
             else
               count += 1
-            end
-          end
-
-          object.products.keys.each do |product_key|
-            if row[1].to_s.include?(product_key)
-              product_name = product_key
             end
           end
 
@@ -164,18 +157,15 @@ class PairedSamplesTestReadData
         end
 
         if tt_flag == true && st_flag == false
-          object.products.keys.each do |product_key|
-            product_name = product_key
-            object.products[product_name][name][:compare_with] ||= {}
-            object.benchmarks.keys.each do |key|
-              object.products[product_name][name][:compare_with][key] ||= {
-                score: 0,
-                test_80: nil,
-                test_90: nil,
-                test_95: nil,
-                test_99: nil
-              }
-            end
+          object.products[product_name][name][:compare_with] ||= {}
+          object.benchmarks.keys.each do |key|
+            object.products[product_name][name][:compare_with][key] ||= {
+              score: 0,
+              test_80: nil,
+              test_90: nil,
+              test_95: nil,
+              test_99: nil
+            }
           end
         end
 
@@ -185,23 +175,18 @@ class PairedSamplesTestReadData
             compare_with = key if row[1].to_s.include?(key)
           end
           next if compare_with.nil?
-          object.products.keys.each do |product_key|
-            if row[1].to_s.include?(product_key)
-              product_name = product_key
-              compare_with_mean = object.benchmarks[compare_with][name][:mean]
-              current_product_mean = object.products[product_name][name][:mean]
-              object.products[product_name][name][:compare_with][compare_with] = {
-                score: row[9].to_f,
-                test_80: ( row[9].to_f  < 0.2 ? (current_product_mean > compare_with_mean ? "W" : "L") : nil ),
-                test_90: ( row[9].to_f  < 0.1 ? (current_product_mean > compare_with_mean ? "W" : "L") : nil ),
-                test_95: ( row[9].to_f  < 0.05 ? (current_product_mean > compare_with_mean ? "W" : "L") : nil ),
-                test_99: ( row[9].to_f  < 0.01 ? (current_product_mean > compare_with_mean ? "W" : "L") : nil )
-              }
-            end
-          end
+          compare_with_mean = object.benchmarks[compare_with][name][:mean]
+          current_product_mean = object.products[product_name][name][:mean]
+          object.products[product_name][name][:compare_with][compare_with] = {
+            score: row[9].to_f,
+            test_80: ( row[9].to_f  < 0.2 ? (current_product_mean > compare_with_mean ? "W" : "L") : nil ),
+            test_90: ( row[9].to_f  < 0.1 ? (current_product_mean > compare_with_mean ? "W" : "L") : nil ),
+            test_95: ( row[9].to_f  < 0.05 ? (current_product_mean > compare_with_mean ? "W" : "L") : nil ),
+            test_99: ( row[9].to_f  < 0.01 ? (current_product_mean > compare_with_mean ? "W" : "L") : nil )
+          }
+
         end
       end # End Sheet
-
 
     end # End File
 

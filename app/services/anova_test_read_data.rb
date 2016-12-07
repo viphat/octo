@@ -1,5 +1,5 @@
 class AnovaTestReadData
-  # reload!; input_file = "/home/viphat/Downloads/octo/anova_test_input.xlsx"; object = AnovaTestReadInput.read_file(input_file); data_file = "/home/viphat/Downloads/octo/anova.xlsx"; object = AnovaTestReadData.read_file(object, data_file)
+  # reload!; input_file = "/home/viphat/Downloads/octo/anova_test_input_1.xlsx"; object = AnovaTestReadInput.read_file(input_file); data_file = "/home/viphat/Downloads/octo/anova.xlsx"; object = AnovaTestReadData.read_file(object, data_file)
 
   def self.read_file(object, data_file)
     xlsx = Roo::Spreadsheet.open(data_file)
@@ -78,8 +78,7 @@ class AnovaTestReadData
           tukey_flag = false
           dunnett_flag = true
         end
-        # IMPORTANT
-        col = 1
+        col = 2 # IMPORTANT, You have to change it based on data
         if tukey_flag
           object.products.keys.each do |key|
             tukey_key = key if row[col].to_s.split(" ").join(" ") == key

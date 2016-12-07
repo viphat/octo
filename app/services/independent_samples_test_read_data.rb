@@ -47,22 +47,24 @@ class IndependentSamplesTestReadData
         if str == object.group_statistics
           group_statistics_flag = true
           i = 2
-          i = 1 unless sheet.row(index+4)[i].is_a?(String)
-          brand_1 = "#{sheet.row(index+4)[i].split(" ").join(" ")}_#{sheet_index}"
-          brand_2 = "#{sheet.row(index+3)[i].split(" ").join(" ")}_#{sheet_index}"
+          i = 1 unless sheet.row(index+3)[i].is_a?(String)
+          # brand_1 = "#{sheet.row(index+4)[i].split(" ").join(" ")}_#{sheet_index}"
+          # brand_2 = "#{sheet.row(index+3)[i].split(" ").join(" ")}_#{sheet_index}"
+          brand_1 = "#{sheet.row(index+3)[i].split(" ").join(" ")}"
+          brand_2 = "#{sheet.row(index+4)[i].split(" ").join(" ")}"
           # Read Mean
           object.benchmarks.keys.each do |bm|
             if bm == brand_1 && object.benchmarks[bm][name][:mean].nil?
-              object.benchmarks[bm][name][:mean] = ( sheet.row(index+4)[i+2].to_f > 1.0 ? sheet.row(index+4)[i+2].to_f :
-                sheet.row(index+4)[4] == "." ? "." : sheet.row(index+4)[i+2].to_f * 100 )
+              object.benchmarks[bm][name][:mean] = ( sheet.row(index+3)[i+2].to_f > 1.0 ? sheet.row(index+3)[i+2].to_f :
+                sheet.row(index+3)[4] == "." ? "." : sheet.row(index+3)[i+2].to_f * 100 )
             end
           end
 
           object.products.keys.each do |product|
 
             if product == brand_2 && object.products[product][name][:mean].nil?
-              object.products[product][name][:mean] = ( sheet.row(index+3)[i+2].to_f > 1.0 ? sheet.row(index+3)[i+2].to_f :
-                sheet.row(index+3)[i+2] == "." ? "." : sheet.row(index+3)[i+2].to_f * 100 )
+              object.products[product][name][:mean] = ( sheet.row(index+4)[i+2].to_f > 1.0 ? sheet.row(index+4)[i+2].to_f :
+                sheet.row(index+4)[i+2] == "." ? "." : sheet.row(index+4)[i+2].to_f * 100 )
             end
           end
 
