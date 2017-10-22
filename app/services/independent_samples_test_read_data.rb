@@ -1,5 +1,4 @@
 class IndependentSamplesTestReadData
-
   def self.read_file(object, data_file)
     xlsx = Roo::Spreadsheet.open(data_file)
 
@@ -138,8 +137,5 @@ class IndependentSamplesTestReadData
     end # Sheets
 
     object
-
   end
-
-
 end

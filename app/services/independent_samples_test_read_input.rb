@@ -1,8 +1,4 @@
 class IndependentSamplesTestReadInput
-  # reload!; input_file = "/home/viphat/Downloads/octo/independent_samples_test_input.xlsx"; data_file = "/home/viphat/Downloads/octo/ITEST.xls"; object = IndependentSamplesTestReadInput.read_file(input_file);
-  # object = IndependentSamplesTestReadData.read_file(object, data_file); output_file = "/home/viphat/Downloads/octo/i_output.xlsx"
-  #  IndependentSamplesTestExportData.write_file(object, output_file)
-
   def self.read_file(input_file)
     xlsx = Roo::Spreadsheet.open(input_file)
     sheet = xlsx.sheet("Input")

@@ -1,5 +1,4 @@
 class PairedSamplesTestReadData
-
   def self.read_data_without_benchmark(object, data_file)
     xlsx = Roo::Spreadsheet.open(data_file)
 
@@ -21,7 +20,8 @@ class PairedSamplesTestReadData
         name = name || nil
         if row[0].to_s.downcase == "syntax"
           object.questions.each do |x|
-            if row[2].to_s.include?("#{x}_")
+            if row[2].to_s.include?("#{x}")
+              #if row[2].to_s.include?("#{x}_E4A")
               name = x
               st_flag, tt_flag, corr_flag = false, false, false
               bm_name = nil
@@ -114,13 +114,17 @@ class PairedSamplesTestReadData
 
         if row[0].to_s.downcase == "syntax"
           object.questions.each do |x|
-            if row[2].to_s.include?("#{x} ")
+            #if row[2].to_s.include?("#{x}_K5D")
+              #if row[2].to_s.include?("#{x}_E4A")
+              if row[2].to_s.include?("#{x}")
               name = x
               st_flag, tt_flag = false, false
               product_name = nil
             end
           end
         end
+
+        product_name = 'Scale3'
 
         if row[0].to_s.downcase.start_with?("brand =")
           product_name = row[0].split("=").second.split(" ").join(" ")
@@ -137,14 +141,15 @@ class PairedSamplesTestReadData
 
           count = 0
           object.benchmarks.keys.each do |key|
-            if row[1].to_s.include?(key)
-              object.benchmarks[key][name][:mean] = ( row[2].to_f > 1.0 ? row[2].to_f : (row[2] == "." ? "." : row[2].to_f * 100 ) ) if object.benchmarks[key][name][:mean].nil?
+            if (row[1].to_s.include?(name + "_") || row[1].to_s == name)&& object.benchmarks[key][name][:mean].nil?
+               #if (row[1].to_s.include?(name) || row[1].to_s == name)&& object.benchmarks[key][name][:mean].nil?
+              object.benchmarks[key][name][:mean] = (row[2].to_f > 1.0 ? row[2].to_f : (row[2] == "." ? "." : row[2].to_f * 100 ) ) if object.benchmarks[key][name][:mean].nil?
             else
               count += 1
             end
           end
 
-          if count == object.benchmarks.keys.length && object.products[product_name][name][:mean].nil?
+      if count == object.benchmarks.keys.length && object.products[product_name][name][:mean].nil?
             object.products[product_name][name][:mean] = (row[2].to_f > 1.0 ? row[2].to_f : (row[2] == "." ? "." : row[2].to_f * 100) )
           end
 
@@ -176,7 +181,18 @@ class PairedSamplesTestReadData
           end
           next if compare_with.nil?
           compare_with_mean = object.benchmarks[compare_with][name][:mean]
-          current_product_mean = object.products[product_name][name][:mean]
+
+
+
+
+
+
+          current_product_mean = object.products[product_name][name][:mean] || 3.0
+           if compare_with_mean.nil?
+
+            compare_with_mean = current_product_mean
+            current_product_mean = 3.0
+          end
           object.products[product_name][name][:compare_with][compare_with] = {
             score: row[9].to_f,
             test_80: ( row[9].to_f  < 0.2 ? (current_product_mean > compare_with_mean ? "W" : "L") : nil ),
@@ -188,9 +204,12 @@ class PairedSamplesTestReadData
         end
       end # End Sheet
 
-    end # End File
+    end # End
+
+
+
+
 
     object
   end # End Method
-
 end

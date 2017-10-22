@@ -78,7 +78,9 @@ class AnovaTestReadData
           tukey_flag = false
           dunnett_flag = true
         end
+
         col = 2 # IMPORTANT, You have to change it based on data
+
         if tukey_flag
           object.products.keys.each do |key|
             tukey_key = key if row[col].to_s.split(" ").join(" ") == key
@@ -117,5 +119,4 @@ class AnovaTestReadData
     end #xlsx
     object
   end
-
 end

@@ -23,7 +23,5 @@ class AnovaTestReadInput
     end
 
     object
-
   end
-
 end
