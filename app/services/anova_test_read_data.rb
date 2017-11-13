@@ -556,7 +556,7 @@ class AnovaTestReadData
         if des_flag
           object.questions[name][:warnings] = true if sheet.row(index-4)[0].to_s == "Warnings"
           object.products.keys.each do |p|
-            object.products[p][name][:mean] = ( row[2].to_f <= 1.0 ?  ( row[2] == "." ? "." : row[2].to_f  * 100 ) : row[2].to_f ) if row[0].to_s.split(" ").join(" ") == p && object.products[p][name][:mean].nil?
+            object.products[p][name][:mean] = (row[2].to_f <= 1.0 ?  ( row[2] == "." ? "." : row[2].to_f  * 100 ) : row[2].to_f ) if row[0].to_s.split(" ").join(" ") == p && object.products[p][name][:mean].nil?
           end
         end
 
@@ -625,7 +625,6 @@ class AnovaTestReadData
             end
           end
         end
-
       end # Each Sheet
     end #xlsx
     object
