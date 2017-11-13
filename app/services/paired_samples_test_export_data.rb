@@ -1,6 +1,5 @@
 class PairedSamplesTestExportData
-  # reload!; input_file = "/Users/viphat/projects/excel/enigma2/paired_sample_test_input.xlsx"; data_file = "/Users/viphat/projects/excel/enigma2/finn/PAIR/PAIR BM2-YOUNG.xls"; object = PairedSamplesTestReadInput.read_file(input_file); object = PairedSamplesTestReadData.read_data_with_benchmark(object, data_file); output_file = "/Users/viphat/projects/excel/enigma2/finn/PAIR/PAIR BM2-YOUNG OUTPUT.xls"; PairedSamplesTestExportData.write_file(object, output_file)
-
+  # reload!; data_file = "/Users/viphat/projects/excel/cindy/Pair-Scale3 - Total.xls"; object = PairedSamplesTestReadData.read_data_with_benchmark(object, data_file); output_file = "/Users/viphat/projects/excel/cindy/Pair-Scale3 - Total - OUTPUT.xls"; PairedSamplesTestExportData.write_file(object, output_file)
   # PairedSamplesTestExportData.write_file_without_benchmark(object, output_file)
 
   def self.write_file_without_benchmark(object, output_file)
@@ -225,8 +224,5 @@ class PairedSamplesTestExportData
     end
 
     output_sheet.add_row(row)
-
   end
-
-
 end
