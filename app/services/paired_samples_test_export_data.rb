@@ -1,6 +1,5 @@
 class PairedSamplesTestExportData
   # reload!; data_file = "/Users/viphat/projects/excel/cindy/Pair-Scale3 - Total.xls"; object = PairedSamplesTestReadData.read_data_with_benchmark(object, data_file); output_file = "/Users/viphat/projects/excel/cindy/Pair-Scale3 - Total - OUTPUT.xls"; PairedSamplesTestExportData.write_file(object, output_file)
-
   # PairedSamplesTestExportData.write_file_without_benchmark(object, output_file)
 
   def self.write_file_without_benchmark(object, output_file)

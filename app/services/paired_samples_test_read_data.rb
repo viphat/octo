@@ -638,7 +638,7 @@ class PairedSamplesTestReadData
           object.questions.each do |x|
             # if row[2].to_s.include?("#{x}_K5D")
               # if row[2].to_s.include?("#{x}_E4A")
-              if row[2].to_s.include?("#{x}")
+            if row[2].to_s.include?("#{x}")
               name = x
               st_flag, tt_flag = false, false
               product_name = nil
@@ -674,7 +674,6 @@ class PairedSamplesTestReadData
       if count == object.benchmarks.keys.length && object.products[product_name][name][:mean].nil?
             object.products[product_name][name][:mean] = (row[2].to_f > 1.0 ? row[2].to_f : (row[2] == "." ? "." : row[2].to_f * 100) )
           end
-
         end
 
         if row[0].to_s.downcase.include?(object.test_table)
