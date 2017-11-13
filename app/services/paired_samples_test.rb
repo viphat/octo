@@ -12,7 +12,5 @@ class PairedSamplesTest
     @statistic_table = "Paired Samples Statistics".downcase
     @test_table = "Paired Samples Test".downcase
     @correlation = "Paired Samples Correlations".downcase
-
   end
-
 end

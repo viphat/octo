@@ -21,7 +21,7 @@ class PairedSamplesTestReadData
         if row[0].to_s.downcase == "syntax"
           object.questions.each do |x|
             if row[2].to_s.include?("#{x}")
-              #if row[2].to_s.include?("#{x}_E4A")
+              # if row[2].to_s.include?("#{x}_E4A")
               name = x
               st_flag, tt_flag, corr_flag = false, false, false
               bm_name = nil
@@ -114,8 +114,8 @@ class PairedSamplesTestReadData
 
         if row[0].to_s.downcase == "syntax"
           object.questions.each do |x|
-            #if row[2].to_s.include?("#{x}_K5D")
-              #if row[2].to_s.include?("#{x}_E4A")
+            # if row[2].to_s.include?("#{x}_K5D")
+              # if row[2].to_s.include?("#{x}_E4A")
               if row[2].to_s.include?("#{x}")
               name = x
               st_flag, tt_flag = false, false
@@ -182,11 +182,6 @@ class PairedSamplesTestReadData
           next if compare_with.nil?
           compare_with_mean = object.benchmarks[compare_with][name][:mean]
 
-
-
-
-
-
           current_product_mean = object.products[product_name][name][:mean] || 3.0
            if compare_with_mean.nil?
 
@@ -205,10 +200,6 @@ class PairedSamplesTestReadData
       end # End Sheet
 
     end # End
-
-
-
-
 
     object
   end # End Method

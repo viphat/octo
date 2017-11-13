@@ -1,6 +1,4 @@
 class AnovaTestReadInput
-  # reload!; input_file = "/home/viphat/Downloads/octo/anova_test_input.xlsx"; object = AnovaTestReadInput.read_file(input_file)
-
   def self.read_file(input_file)
     xlsx = Roo::Spreadsheet.open(input_file)
     sheet = xlsx.sheet("Input")
