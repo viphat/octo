@@ -1,5 +1,5 @@
 class AnovaTestExportData
-  # reload!; input_file = "/home/viphat/Downloads/enigma/anova_test_input_1.xlsx"; object = AnovaTestReadInput.read_file(input_file); data_file = "/home/viphat/Downloads/enigma/1205/ANOVA-Bottle-Filter/ANOVA-BOTTLE-SCENT 2.xls"; object = AnovaTestReadData.read_file(object, data_file); output_file = "/home/viphat/Downloads/enigma/1205/ANOVA-Bottle-Filter/ANOVA-BOTTLE-SCENT 2 OUTPUT.xls"; AnovaTestExportData.write_file(object, output_file)
+  # reload!; input_file = "/Users/viphat/projects/excel/enigma2/anova_test_input.xlsx"; object = AnovaTestReadInput.read_file(input_file); data_file = "/Users/viphat/projects/excel/enigma2/CARATEN/ANOVA/ANOVA-Young.xls"; object = AnovaTestReadData.read_file(object, data_file); output_file = "/Users/viphat/projects/excel/enigma2/CARATEN/ANOVA/ANOVA-Young OUTPUT.xls"; AnovaTestExportData.write_file(object, output_file)
 
   def self.write_file(object, output_file)
     p = Axlsx::Package.new
