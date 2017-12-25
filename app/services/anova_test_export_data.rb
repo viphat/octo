@@ -1,5 +1,5 @@
 class AnovaTestExportData
-  # data_file = "/Users/viphat/projects/excel/CARATEN/ANOVA-Total.xls"; object = AnovaTestReadData.read_file(object, data_file); output_file = "/Users/viphat/projects/excel/CARATEN/ANOVA-Total OUTPUT.xls"; AnovaTestExportData.write_file(object, output_file)
+  # data_file = "/Users/viphat/projects/excel/MONDAY/ANOVA - Total.xls"; object = AnovaTestReadData.read_file(object, data_file); output_file = "/Users/viphat/projects/excel/MONDAY/ANOVA - Total OUTPUT.xls"; AnovaTestExportData.write_file(object, output_file)
 
   def self.write_file(object, output_file)
     p = Axlsx::Package.new
