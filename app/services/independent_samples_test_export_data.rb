@@ -1,5 +1,5 @@
 class IndependentSamplesTestExportData
-  # reload!; input_file = "/home/viphat/Downloads/enigma/independent_samples_test_input.xlsx"; data_file = "/home/viphat/Downloads/enigma/1205/IndependentTTEST-Machine-Filter/Independent TTEST-Machine-SCENT 2.xls"; object = IndependentSamplesTestReadInput.read_file(input_file); object = IndependentSamplesTestReadData.read_file(object, data_file); output_file = "/home/viphat/Downloads/enigma/1205/IndependentTTEST-Machine-Filter/Independent TTEST-Machine-SCENT 2 OUTPUT.xls"; IndependentSamplesTestExportData.write_file(object, output_file)
+  # data_file = "/Users/viphat/projects/excel/CARATEN/Independent Total.xls"; object = IndependentSamplesTestReadData.read_file(object, data_file); output_file = "/Users/viphat/projects/excel/CARATEN/Independent Total - OUTPUT.xls"; IndependentSamplesTestExportData.write_file(object, output_file)
 
   def self.write_file(object, output_file)
     p = Axlsx::Package.new
