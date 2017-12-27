@@ -1,5 +1,5 @@
 class IndependentSamplesTestExportData
-  # data_file = "/Users/viphat/projects/excel/MONDAY/Independent Test - Total.xls"; object = IndependentSamplesTestReadData.read_file(object, data_file); output_file = "/Users/viphat/projects/excel/Monday/Independent Test - Total - OUTPUT.xls"; IndependentSamplesTestExportData.write_file(object, output_file)
+  # data_file = "/Users/viphat/projects/excel/SNOW/BM1/BM1 - Independent Test - Total.xls"; object = IndependentSamplesTestReadData.read_file(object, data_file); output_file = "/Users/viphat/projects/excel/SNOW/BM1/BM1 - Independent Test - Total - OUTPUT.xls"; IndependentSamplesTestExportData.write_file(object, output_file)
 
   def self.write_file(object, output_file)
     p = Axlsx::Package.new
@@ -22,7 +22,6 @@ class IndependentSamplesTestExportData
   end
 
   def self.write_header(object, output_sheet)
-    # Ghi 2 dòng đầu tiên của Header
     row_1 = [""]
     row_2 = [""]
 
