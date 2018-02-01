@@ -1,4 +1,304 @@
 class PairedSamplesTestReadData
+  def self.base_object
+    object = {
+      products: [
+        "GC70",
+        "FC33",
+        "MO42",
+        "SU51",
+        "EA68"
+      ],
+
+      questions: {
+        "Q3": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q3.TB": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q3.T2B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q3.T3B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q3.B2B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q4.JR": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q4.STRONG": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q4.WEAK": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q5": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q5.TB": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q5.T2B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q5.T3B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q5.B2B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q6.JR": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q6.STRONG": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q6.WEAK": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q7": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q7.TB": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q7.T2B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q7.T3B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q7.B2B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q8.R1": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q8.R2": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q8.R3": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q8.R4": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q8.R5": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q8.R6": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q8.R7": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q9": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q9.TB": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q9.T2B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q9.B2B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2A": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2A.TB": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2A.T2B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2A.B2B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2B.F1": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2B.F2": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2B.F3": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2B.F4": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        }
+      }
+  end
 
   def self.read_data_without_benchmark(object, data_file)
     xlsx = Roo::Spreadsheet.open(data_file)
@@ -135,17 +435,20 @@ class PairedSamplesTestReadData
 
         if st_flag == true && ( row[0].to_s.downcase.start_with?("pair ") || sheet.row(index)[0].to_s.downcase.start_with?("pair "))
 
-          count = 0
-          object.benchmarks.keys.each do |key|
-            if row[1].to_s.include?(key)
-              object.benchmarks[key][name][:mean] = ( row[2].to_f > 1.0 ? row[2].to_f : (row[2] == "." ? "." : row[2].to_f * 100 ) ) if object.benchmarks[key][name][:mean].nil?
-            else
-              count += 1
-            end
-          end
+          # count = 0
+          key = object.benchmarks.keys.first
+          object.benchmarks[key][name][:mean] = ( row[2].to_f > 1.0 ? row[2].to_f : (row[2] == "." ? "." : row[2].to_f * 100 ) ) if object.benchmarks[key][name][:mean].nil?
 
-          if count == object.benchmarks.keys.length && object.products[product_name][name][:mean].nil?
-            object.products[product_name][name][:mean] = (row[2].to_f > 1.0 ? row[2].to_f : (row[2] == "." ? "." : row[2].to_f * 100) )
+          # object.benchmarks.keys.each do |key|
+          #   if row[1].to_s.include?(key)
+          #     object.benchmarks[key][name][:mean] = ( row[2].to_f > 1.0 ? row[2].to_f : (row[2] == "." ? "." : row[2].to_f * 100 ) ) if object.benchmarks[key][name][:mean].nil?
+          #   else
+          #     count += 1
+          #   end
+          # end
+          # count == object.benchmarks.keys.length &&
+          if object.products[product_name][name][:mean].nil?
+            object.products[product_name][name][:mean] = (sheet.row(index + 2)[2].to_f > 1.0 ? sheet.row(index + 2)[2].to_f : (sheet.row(index + 2)[2] == "." ? "." : sheet.row(index + 2)[2].to_f * 100) )
           end
 
         end
@@ -170,11 +473,11 @@ class PairedSamplesTestReadData
         end
 
         if tt_flag == true && st_flag == false && row[0].to_s.downcase.start_with?("pair ")
-          compare_with = nil
-          object.benchmarks.keys.each do |key|
-            compare_with = key if row[1].to_s.include?(key)
-          end
-          next if compare_with.nil?
+          compare_with = 'GC70'
+          # object.benchmarks.keys.each do |key|
+          #   compare_with = key if row[1].to_s.include?(key)
+          # end
+          # next if compare_with.nil?
           compare_with_mean = object.benchmarks[compare_with][name][:mean]
           current_product_mean = object.products[product_name][name][:mean]
           object.products[product_name][name][:compare_with][compare_with] = {
@@ -189,8 +492,6 @@ class PairedSamplesTestReadData
       end # End Sheet
 
     end # End File
-
     object
   end # End Method
-
 end

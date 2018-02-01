@@ -2,339 +2,300 @@ class AnovaTestReadData
   def self.base_object
     object = {
       products: [
-        "QC25",
-        "LP53",
-        "BB10",
-        "AX82",
-        "HL33",
-        "PA77",
-        "IR02"
+        "GC70",
+        "FC33",
+        "MO42",
+        "SU51",
+        "EA68"
       ],
 
       questions: {
-        "Q1": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q3": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q1.TB": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q3.TB": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q1.T2B": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q3.T2B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q1.B2B": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q3.T3B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q2": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q3.B2B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q2.TB": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q4.JR": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q2.T2B": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q4.STRONG": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q2.B2B": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
-        },
-        "Q3.JR": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
-        },
-        "Q3.STRONG": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
-        },
-        "Q3.WEAK": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
-        },
-        "Q4": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
-        },
-        "Q4.TB": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
-        },
-        "Q4.T2B": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
-        },
-        "Q4.B2B": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q4.WEAK": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
         "Q5": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
         "Q5.TB": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
         "Q5.T2B": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q5.T3B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
         "Q5.B2B": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
         "Q6.JR": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
         "Q6.STRONG": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
         "Q6.WEAK": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
         "Q7": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
         "Q7.TB": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
         "Q7.T2B": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q7.T3B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
         "Q7.B2B": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q8": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q8.R1": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q8.TB": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q8.R2": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q8.T2B": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q8.R3": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q8.B2B": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q8.R4": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q9.1": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q8.R5": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q9.2": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q8.R6": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q9.3": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q8.R7": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q9.4": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q9": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q9.5": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q9.TB": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q9.6": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q9.T2B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q9.B2B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2A": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2A.TB": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2A.T2B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2A.B2B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2B.F1": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2B.F2": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2B.F3": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2B.F4": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         }
       }
   end
@@ -358,7 +319,7 @@ class AnovaTestReadData
         name = name || nil
         if row[0].to_s.start_with?("ONEWAY")
           object.questions.keys.each do |question|
-            if row[0].to_s.upcase().include?("#{question.to_s.upcase().split(" ").join(" ").to_s} ")
+            if row[0].to_s.upcase().include?("#{question.to_s.upcase().split(' ').join(' ').to_s} ")
               name = question
               object.products.keys.each do |p|
                 object.products[p][name] = {}
@@ -416,7 +377,9 @@ class AnovaTestReadData
           tukey_flag = false
           dunnett_flag = true
         end
-        col = 2 # IMPORTANT, You have to change it based on data
+
+        col = 1 # IMPORTANT, You have to change it based on data
+
         if tukey_flag
           object.products.keys.each do |key|
             tukey_key = key if row[col].to_s.split(" ").join(" ") == key
@@ -424,12 +387,12 @@ class AnovaTestReadData
           if tukey_key
             compare_with_key = nil
             object.products.keys.each do |key|
-              compare_with_key = key if row[col + 3].to_s.split(" ").join(" ") == key
+              compare_with_key = key if row[col+1].to_s.split(" ").join(" ") == key
             end
             if compare_with_key.present?
               object.products[tukey_key][name][:compare_with] = object.products[tukey_key][name][:compare_with] || {}
               object.products[tukey_key][name][:compare_with][compare_with_key] = object.products[tukey_key][name][:compare_with][compare_with_key] || {}
-              object.products[tukey_key][name][:compare_with][compare_with_key][:tukey_sig] = row[col + 6].to_f
+              object.products[tukey_key][name][:compare_with][compare_with_key][:tukey_sig] = row[col+4].to_f
               next
             end
           end
@@ -442,10 +405,10 @@ class AnovaTestReadData
           if dunnett_key
             compare_with_key = nil
             object.products.keys.each do |key|
-              compare_with_key = key if row[col + 3].to_s.split(" ").join(" ") == key
+              compare_with_key = key if row[col+1].to_s.split(" ").join(" ") == key
             end
             if compare_with_key.present?
-              object.products[dunnett_key][name][:compare_with][compare_with_key][:dunnett_sig] = row[col + 6].to_f
+              object.products[dunnett_key][name][:compare_with][compare_with_key][:dunnett_sig] = row[col+4].to_f
               next
             end
           end
@@ -453,6 +416,7 @@ class AnovaTestReadData
 
       end # Each Sheet
     end #xlsx
+
     object
   end
 end

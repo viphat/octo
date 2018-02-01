@@ -1,5 +1,5 @@
 class AnovaTestExportData
-  # data_file = "/Users/viphat/projects/excel/THURSDAY/ANOVA - Total.xls"; object = AnovaTestReadData.read_file(object, data_file); output_file = "/Users/viphat/projects/excel/THURSDAY/ANOVA - Total OUTPUT.xls"; AnovaTestExportData.write_file(object, output_file)
+  # reload!; input_file = "/Users/Phat.Duong/projects/excel/anova_test_input.xlsx"; object = AnovaTestReadInput.read_file(input_file); data_file = "/Users/Phat.Duong/projects/excel/YUKA/ANOVA/ANOVA-AGE 2.xlsx"; object = AnovaTestReadData.read_file(object, data_file); output_file = "/Users/Phat.Duong/projects/excel/YUKA/ANOVA/ANOVA-AGE 2 - OUTPUT.xls"; AnovaTestExportData.write_file(object, output_file)
 
   def self.write_file(object, output_file)
     p = Axlsx::Package.new
@@ -26,7 +26,6 @@ class AnovaTestExportData
 
     output_sheet.add_row(row_1)
     output_sheet.add_row(row_2)
-
   end
 
   def self.write_question_data(object, question, output_sheet)
@@ -50,6 +49,7 @@ class AnovaTestExportData
       end
 
       sig = ""
+
       # Test 95%
       sig_key_95 =
         if object.questions[question][:homogeneity_sig] < 0.05

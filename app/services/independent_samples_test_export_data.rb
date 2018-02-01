@@ -1,5 +1,5 @@
 class IndependentSamplesTestExportData
-  # data_file = "/Users/viphat/projects/excel/THURSDAY/BM1/BM1 - Independent Test - Total.xls"; object = IndependentSamplesTestReadData.read_file(object, data_file); output_file = "/Users/viphat/projects/excel/THURSDAY/BM1/BM1 - Independent Test - Total - OUTPUT.xls"; IndependentSamplesTestExportData.write_file(object, output_file)
+  # reload!; input_file = "/Users/Phat.Duong/projects/excel/independent_samples_test_input.xlsx"; data_file = "/Users/Phat.Duong/projects/excel/YUKA/Independent TTEST - BM.xlsx"; object = IndependentSamplesTestReadInput.read_file(input_file); object = IndependentSamplesTestReadData.read_file(object, data_file); output_file = "/Users/Phat.Duong/projects/excel/YUKA/Independent TTEST - BM OUTPUT.xlsx"; IndependentSamplesTestExportData.write_file(object, output_file)
 
   def self.write_file(object, output_file)
     p = Axlsx::Package.new

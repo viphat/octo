@@ -2,339 +2,300 @@ class IndependentSamplesTestReadData
   def self.base_object
     object = {
       products: [
-        "QC25",
-        "LP53",
-        "BB10",
-        "AX82",
-        "HL33",
-        "PA77",
-        "IR02"
+        "GC70",
+        "FC33",
+        "MO42",
+        "SU51",
+        "EA68"
       ],
 
       questions: {
-        "Q1": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q3": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q1.TB": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q3.TB": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q1.T2B": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q3.T2B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q1.B2B": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q3.T3B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q2": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q3.B2B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q2.TB": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q4.JR": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q2.T2B": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q4.STRONG": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q2.B2B": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
-        },
-        "Q3.JR": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
-        },
-        "Q3.STRONG": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
-        },
-        "Q3.WEAK": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
-        },
-        "Q4": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
-        },
-        "Q4.TB": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
-        },
-        "Q4.T2B": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
-        },
-        "Q4.B2B": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q4.WEAK": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
         "Q5": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
         "Q5.TB": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
         "Q5.T2B": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q5.T3B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
         "Q5.B2B": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
         "Q6.JR": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
         "Q6.STRONG": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
         "Q6.WEAK": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
         "Q7": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
         "Q7.TB": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
         "Q7.T2B": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q7.T3B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
         "Q7.B2B": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q8": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q8.R1": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q8.TB": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q8.R2": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q8.T2B": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q8.R3": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q8.B2B": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q8.R4": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q9.1": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q8.R5": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q9.2": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q8.R6": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q9.3": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q8.R7": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q9.4": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q9": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q9.5": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q9.TB": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         },
-        "Q9.6": {
-          "QC25": { means: 0.0 },
-          "LP53": { means: 0.0 },
-          "BB10": { means: 0.0 },
-          "AX82": { means: 0.0 },
-          "HL33": { means: 0.0 },
-          "PA77": { means: 0.0 },
-          "IR02": { means: 0.0 },
+        "Q9.T2B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "Q9.B2B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2A": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2A.TB": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2A.T2B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2A.B2B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2B": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2B.F1": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2B.F2": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2B.F3": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
+        },
+        "CQ2B.F4": {
+          "GC70": { means: 0.0 },
+          "FC33": { means: 0.0 },
+          "MO42": { means: 0.0 },
+          "SU51": { means: 0.0 },
+          "EA68": { means: 0.0 }
         }
       }
   end
