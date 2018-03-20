@@ -2,302 +2,681 @@ class PairedSamplesTestReadData
   def self.base_object
     object = {
       products: [
-        "GC70",
-        "FC33",
-        "MO42",
-        "SU51",
-        "EA68"
+        "OT15",
+        "FF87",
+        "AX32",
+        "GG10",
+        "ZA70"
       ],
 
       questions: {
+        "N1": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "N1.TB": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "N1.T2B": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "N1.B2B": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "N1.JR": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "N2.STRONG": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "N2.WEAK": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q1": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q1.TB": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q1.T2B": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q1.B2B": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q2": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q2.TB": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q2.T2B": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q2.B2B": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
         "Q3": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
         "Q3.TB": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
         "Q3.T2B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "Q3.T3B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
         "Q3.B2B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q4.JR": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q7.R1": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q4.STRONG": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q7.R2": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q4.WEAK": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q7.R3": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q5": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q7.R4": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q5.TB": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q7.R5": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q5.T2B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q7.R6": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q5.T3B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q7.R7": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q5.B2B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q7.R8": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q6.JR": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q7.R9": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q6.STRONG": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q7.R10": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q6.WEAK": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q8.1": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q7": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q8.2": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q7.TB": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q8.3": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q7.T2B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q8.4": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q7.T3B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q8.5": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q7.B2B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q8.6": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q8.R1": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q8.7": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q8.R2": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q8.8": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q8.R3": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q8.9": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q8.R4": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q8.10": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q8.R5": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q8.10": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q8.R6": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q8.11": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q8.R7": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q8.12": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q9": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q8.13": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q9.TB": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q8.14": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q9.T2B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q8.15": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "Q9.B2B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q4.R1": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "CQ2A": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q4.R1.TB": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "CQ2A.TB": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q4.R1.T2B": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "CQ2A.T2B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q4.R1.B2B": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "CQ2A.B2B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q4.R2": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "CQ2B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q4.R2.TB": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "CQ2B.F1": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q4.R2.T2B": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "CQ2B.F2": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q4.R2.B2B": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "CQ2B.F3": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q4.R3": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         },
-        "CQ2B.F4": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+        "Q4.R3.TB": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q4.R3.T2B": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q4.R3.B2B": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q4.R4": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q4.R4.TB": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q4.R4.T2B": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q4.R4.B2B": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q4.R5": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q4.R5.TB": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q4.R5.T2B": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q4.R5.B2B": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q4.R6": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q4.R6.TB": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q4.R6.T2B": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q4.R6.B2B": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q5.R1.JR": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q5.R1.STRONG": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q5.R1.WEAK": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q5.R2.JR": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q5.R2.STRONG": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q5.R2.WEAK": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q5.R3.JR": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q5.R3.STRONG": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q5.R3.WEAK": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q5.R4.JR": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q5.R4.STRONG": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q5.R4.WEAK": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q5.R5.JR": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q5.R5.STRONG": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q5.R5.WEAK": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q5.R6.JR": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q5.R6.STRONG": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q5.R6.WEAK": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q6": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q6.TB": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q6.T2B": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q6.B2B": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q9.1": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q9.2": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q10.1": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
+        },
+        "Q10.2": {
+          "OT15": { means: 0.0 },
+          "FF87": { means: 0.0 },
+          "AX32": { means: 0.0 },
+          "GG10": { means: 0.0 },
+          "ZA70": { means: 0.0 }
         }
       }
+    }
   end
 
   def self.read_data_without_benchmark(object, data_file)
@@ -414,7 +793,7 @@ class PairedSamplesTestReadData
 
         if row[0].to_s.downcase == "syntax"
           object.questions.each do |x|
-            if row[2].to_s.include?("#{x} ")
+            if row[2].to_s.include?("#{x} ") || row[2].to_s.include?("#{x}_OT15")
               name = x
               st_flag, tt_flag = false, false
               product_name = nil
@@ -473,7 +852,7 @@ class PairedSamplesTestReadData
         end
 
         if tt_flag == true && st_flag == false && row[0].to_s.downcase.start_with?("pair ")
-          compare_with = 'GC70'
+          compare_with = 'OT15'
           # object.benchmarks.keys.each do |key|
           #   compare_with = key if row[1].to_s.include?(key)
           # end
