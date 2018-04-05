@@ -2,302 +2,153 @@ class IndependentSamplesTestReadData
   def self.base_object
     object = {
       products: [
-        "GC70",
-        "FC33",
-        "MO42",
-        "SU51",
-        "EA68"
+        "CE82",
+        "TO14",
+        "RI50",
+        "SW97"
       ],
 
       questions: {
+        "Q1": {
+          "CE82": { means: 0.0 },
+          "TO14": { means: 0.0 },
+          "RI50": { means: 0.0 },
+          "SW97": { means: 0.0 }
+        },
+        "Q1.TB": {
+          "CE82": { means: 0.0 },
+          "TO14": { means: 0.0 },
+          "RI50": { means: 0.0 },
+          "SW97": { means: 0.0 }
+        },
+        "Q1.T2B": {
+          "CE82": { means: 0.0 },
+          "TO14": { means: 0.0 },
+          "RI50": { means: 0.0 },
+          "SW97": { means: 0.0 }
+        },
+        "Q1.T3B": {
+          "CE82": { means: 0.0 },
+          "TO14": { means: 0.0 },
+          "RI50": { means: 0.0 },
+          "SW97": { means: 0.0 }
+        },
+        "Q1.B2B": {
+          "CE82": { means: 0.0 },
+          "TO14": { means: 0.0 },
+          "RI50": { means: 0.0 },
+          "SW97": { means: 0.0 }
+        },
+        "Q2": {
+          "CE82": { means: 0.0 },
+          "TO14": { means: 0.0 },
+          "RI50": { means: 0.0 },
+          "SW97": { means: 0.0 }
+        },
+        "Q2.JR": {
+          "CE82": { means: 0.0 },
+          "TO14": { means: 0.0 },
+          "RI50": { means: 0.0 },
+          "SW97": { means: 0.0 }
+        },
+        "Q2.STRONG": {
+          "CE82": { means: 0.0 },
+          "TO14": { means: 0.0 },
+          "RI50": { means: 0.0 },
+          "SW97": { means: 0.0 }
+        },
+        "Q2.WEAK": {
+          "CE82": { means: 0.0 },
+          "TO14": { means: 0.0 },
+          "RI50": { means: 0.0 },
+          "SW97": { means: 0.0 }
+        },
         "Q3": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+          "CE82": { means: 0.0 },
+          "TO14": { means: 0.0 },
+          "RI50": { means: 0.0 },
+          "SW97": { means: 0.0 }
         },
         "Q3.TB": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+          "CE82": { means: 0.0 },
+          "TO14": { means: 0.0 },
+          "RI50": { means: 0.0 },
+          "SW97": { means: 0.0 }
         },
         "Q3.T2B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+          "CE82": { means: 0.0 },
+          "TO14": { means: 0.0 },
+          "RI50": { means: 0.0 },
+          "SW97": { means: 0.0 }
         },
         "Q3.T3B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+          "CE82": { means: 0.0 },
+          "TO14": { means: 0.0 },
+          "RI50": { means: 0.0 },
+          "SW97": { means: 0.0 }
         },
         "Q3.B2B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+          "CE82": { means: 0.0 },
+          "TO14": { means: 0.0 },
+          "RI50": { means: 0.0 },
+          "SW97": { means: 0.0 }
+        },
+        "Q4": {
+          "CE82": { means: 0.0 },
+          "TO14": { means: 0.0 },
+          "RI50": { means: 0.0 },
+          "SW97": { means: 0.0 }
         },
         "Q4.JR": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+          "CE82": { means: 0.0 },
+          "TO14": { means: 0.0 },
+          "RI50": { means: 0.0 },
+          "SW97": { means: 0.0 }
         },
         "Q4.STRONG": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+          "CE82": { means: 0.0 },
+          "TO14": { means: 0.0 },
+          "RI50": { means: 0.0 },
+          "SW97": { means: 0.0 }
         },
         "Q4.WEAK": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+          "CE82": { means: 0.0 },
+          "TO14": { means: 0.0 },
+          "RI50": { means: 0.0 },
+          "SW97": { means: 0.0 }
         },
         "Q5": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+          "CE82": { means: 0.0 },
+          "TO14": { means: 0.0 },
+          "RI50": { means: 0.0 },
+          "SW97": { means: 0.0 }
         },
         "Q5.TB": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+          "CE82": { means: 0.0 },
+          "TO14": { means: 0.0 },
+          "RI50": { means: 0.0 },
+          "SW97": { means: 0.0 }
         },
         "Q5.T2B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+          "CE82": { means: 0.0 },
+          "TO14": { means: 0.0 },
+          "RI50": { means: 0.0 },
+          "SW97": { means: 0.0 }
         },
         "Q5.T3B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+          "CE82": { means: 0.0 },
+          "TO14": { means: 0.0 },
+          "RI50": { means: 0.0 },
+          "SW97": { means: 0.0 }
         },
         "Q5.B2B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "Q6.JR": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "Q6.STRONG": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "Q6.WEAK": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "Q7": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "Q7.TB": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "Q7.T2B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "Q7.T3B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "Q7.B2B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "Q8.R1": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "Q8.R2": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "Q8.R3": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "Q8.R4": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "Q8.R5": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "Q8.R6": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "Q8.R7": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "Q9": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "Q9.TB": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "Q9.T2B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "Q9.B2B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "CQ2A": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "CQ2A.TB": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "CQ2A.T2B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "CQ2A.B2B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "CQ2B": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "CQ2B.F1": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "CQ2B.F2": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "CQ2B.F3": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
-        },
-        "CQ2B.F4": {
-          "GC70": { means: 0.0 },
-          "FC33": { means: 0.0 },
-          "MO42": { means: 0.0 },
-          "SU51": { means: 0.0 },
-          "EA68": { means: 0.0 }
+          "CE82": { means: 0.0 },
+          "TO14": { means: 0.0 },
+          "RI50": { means: 0.0 },
+          "SW97": { means: 0.0 }
         }
       }
+    }
   end
 
   def self.read_file(object, data_file)
