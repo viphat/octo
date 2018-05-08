@@ -2,151 +2,343 @@ class AnovaTestReadData
   def self.base_object
     object = {
       products: [
-        "CE82",
-        "TO14",
-        "RI50",
-        "SW97"
+        "FS03",
+        "BT45",
+        "PM37",
+        "LV52"
       ],
 
       questions: {
         "Q1": {
-          "CE82": { means: 0.0 },
-          "TO14": { means: 0.0 },
-          "RI50": { means: 0.0 },
-          "SW97": { means: 0.0 }
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
         },
         "Q1.TB": {
-          "CE82": { means: 0.0 },
-          "TO14": { means: 0.0 },
-          "RI50": { means: 0.0 },
-          "SW97": { means: 0.0 }
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
         },
         "Q1.T2B": {
-          "CE82": { means: 0.0 },
-          "TO14": { means: 0.0 },
-          "RI50": { means: 0.0 },
-          "SW97": { means: 0.0 }
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
         },
         "Q1.T3B": {
-          "CE82": { means: 0.0 },
-          "TO14": { means: 0.0 },
-          "RI50": { means: 0.0 },
-          "SW97": { means: 0.0 }
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
         },
         "Q1.B2B": {
-          "CE82": { means: 0.0 },
-          "TO14": { means: 0.0 },
-          "RI50": { means: 0.0 },
-          "SW97": { means: 0.0 }
-        },
-        "Q2": {
-          "CE82": { means: 0.0 },
-          "TO14": { means: 0.0 },
-          "RI50": { means: 0.0 },
-          "SW97": { means: 0.0 }
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
         },
         "Q2.JR": {
-          "CE82": { means: 0.0 },
-          "TO14": { means: 0.0 },
-          "RI50": { means: 0.0 },
-          "SW97": { means: 0.0 }
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
         },
         "Q2.STRONG": {
-          "CE82": { means: 0.0 },
-          "TO14": { means: 0.0 },
-          "RI50": { means: 0.0 },
-          "SW97": { means: 0.0 }
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
         },
         "Q2.WEAK": {
-          "CE82": { means: 0.0 },
-          "TO14": { means: 0.0 },
-          "RI50": { means: 0.0 },
-          "SW97": { means: 0.0 }
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
         },
         "Q3": {
-          "CE82": { means: 0.0 },
-          "TO14": { means: 0.0 },
-          "RI50": { means: 0.0 },
-          "SW97": { means: 0.0 }
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
         },
         "Q3.TB": {
-          "CE82": { means: 0.0 },
-          "TO14": { means: 0.0 },
-          "RI50": { means: 0.0 },
-          "SW97": { means: 0.0 }
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
         },
         "Q3.T2B": {
-          "CE82": { means: 0.0 },
-          "TO14": { means: 0.0 },
-          "RI50": { means: 0.0 },
-          "SW97": { means: 0.0 }
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
         },
         "Q3.T3B": {
-          "CE82": { means: 0.0 },
-          "TO14": { means: 0.0 },
-          "RI50": { means: 0.0 },
-          "SW97": { means: 0.0 }
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
         },
         "Q3.B2B": {
-          "CE82": { means: 0.0 },
-          "TO14": { means: 0.0 },
-          "RI50": { means: 0.0 },
-          "SW97": { means: 0.0 }
-        },
-        "Q4": {
-          "CE82": { means: 0.0 },
-          "TO14": { means: 0.0 },
-          "RI50": { means: 0.0 },
-          "SW97": { means: 0.0 }
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
         },
         "Q4.JR": {
-          "CE82": { means: 0.0 },
-          "TO14": { means: 0.0 },
-          "RI50": { means: 0.0 },
-          "SW97": { means: 0.0 }
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
         },
         "Q4.STRONG": {
-          "CE82": { means: 0.0 },
-          "TO14": { means: 0.0 },
-          "RI50": { means: 0.0 },
-          "SW97": { means: 0.0 }
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
         },
         "Q4.WEAK": {
-          "CE82": { means: 0.0 },
-          "TO14": { means: 0.0 },
-          "RI50": { means: 0.0 },
-          "SW97": { means: 0.0 }
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
         },
         "Q5": {
-          "CE82": { means: 0.0 },
-          "TO14": { means: 0.0 },
-          "RI50": { means: 0.0 },
-          "SW97": { means: 0.0 }
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
         },
         "Q5.TB": {
-          "CE82": { means: 0.0 },
-          "TO14": { means: 0.0 },
-          "RI50": { means: 0.0 },
-          "SW97": { means: 0.0 }
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
         },
         "Q5.T2B": {
-          "CE82": { means: 0.0 },
-          "TO14": { means: 0.0 },
-          "RI50": { means: 0.0 },
-          "SW97": { means: 0.0 }
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
         },
         "Q5.T3B": {
-          "CE82": { means: 0.0 },
-          "TO14": { means: 0.0 },
-          "RI50": { means: 0.0 },
-          "SW97": { means: 0.0 }
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
         },
         "Q5.B2B": {
-          "CE82": { means: 0.0 },
-          "TO14": { means: 0.0 },
-          "RI50": { means: 0.0 },
-          "SW97": { means: 0.0 }
-        }
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q6.R1": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q6.R2": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q6.R3": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q6.R4": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q6.R5": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q6.R6": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q6.R7": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q6.R8": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q6.R9": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q6.R10": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q7.1": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q7.2": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q7.3": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q7.4": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q7.5": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q7.6": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q7.7": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q7.8": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q7.9": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q7.10": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q7.11": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q7.12": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q7.13": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q7.14": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q7.15": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q8": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q8.TB": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q8.T2B": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q8.B2B": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q9": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q9.TB": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q9.T2B": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q9.B2B": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
+        "Q10": {
+          "FS03": { means: 0.0 },
+          "BT45": { means: 0.0 },
+          "PM37": { means: 0.0 },
+          "LV52": { means: 0.0 }
+        },
       }
     }
   end
