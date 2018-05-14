@@ -1,5 +1,5 @@
 class PairedSamplesTestExportData
-  # reload!; input_file = "/Users/Phat.Duong/projects/excel/paired_sample_test_input.xlsx"; data_file = "/Users/Phat.Duong/projects/excel/TUESDAY/PAIR_Q8_TOTAL.xls"; object = PairedSamplesTestReadInput.read_file(input_file); object = PairedSamplesTestReadData.read_data_with_benchmark(object, data_file); output_file = "/Users/Phat.Duong/projects/excel/TUESDAY/PAIR_Q8_TOTAL OUTPUT.xls"; PairedSamplesTestExportData.write_file(object, output_file)
+  # reload!; input_file = "/Users/Phat.Duong/projects/excel/paired_sample_test_input.xlsx"; data_file = "/Users/Phat.Duong/projects/excel/TUESDAY 2/PAIR TOTAL.xls"; object = PairedSamplesTestReadInput.read_file(input_file); object = PairedSamplesTestReadData.read_data_with_benchmark(object, data_file); output_file = "/Users/Phat.Duong/projects/excel/TUESDAY 2/PAIR TOTAL OUTPUT.xls"; PairedSamplesTestExportData.write_file(object, output_file)
 
   # PairedSamplesTestExportData.write_file_without_benchmark(object, output_file)
 
