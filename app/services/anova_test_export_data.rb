@@ -1,5 +1,5 @@
 class AnovaTestExportData
-  # reload!; input_file = "/Users/Phat.Duong/projects/excel/anova_test_input.xlsx"; object = AnovaTestReadInput.read_file(input_file); data_file = "/Users/Phat.Duong/projects/excel/TUESDAY 2/ANOVA-AGE 1.xls"; object = AnovaTestReadData.read_file(object, data_file); output_file = "/Users/Phat.Duong/projects/excel/TUESDAY 2/ANOVA-AGE 1 OUTPUT.xls"; AnovaTestExportData.write_file(object, output_file)
+  # reload!; input_file = "/Users/viphat/Documents/Spreadsheets/anova_test_input.xlsx"; object = AnovaTestReadInput.read_file(input_file); data_file = "/Users/viphat/Documents/Spreadsheets/Wonderland/ANOVA - YOUNG.xls"; object = AnovaTestReadData.read_file(object, data_file); output_file = "/Users/viphat/Documents/Spreadsheets/Wonderland/ANOVA - YOUNG OUTPUT.xls"; AnovaTestExportData.write_file(object, output_file)
 
   def self.write_file(object, output_file)
     p = Axlsx::Package.new
